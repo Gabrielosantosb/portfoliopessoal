@@ -1,18 +1,39 @@
+// Header.js
 import React from "react";
-import { HeaderContainer, HeaderItem, HeaderList, ThemeToggleContainer } from "./styles";
-import { ThemeToggle } from "../../styles/global";
+import { useState } from "react";
+import {
+  HeaderContainer,
+  HeaderTitle,
+  Container,
+  HeaderItem,
+  ButtonsContainer,
+  Divider,
+  BackEndButton
+} from "./styles";
+import { BasicButton } from "../basicButton";
 
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
+  const [visibleButton, setVisibleButton] = useState(false);
   return (
-    <HeaderContainer>
-      <HeaderList>
-        <HeaderItem className="item-lista">Projetos de Gabriel</HeaderItem>
-      </HeaderList>
-      <ThemeToggleContainer>
-        <ThemeToggle onClick={toggleDarkMode}>
-          {isDarkMode ? "Modo Claro" : "Modo Escuro"}
-        </ThemeToggle>
-      </ThemeToggleContainer>
-    </HeaderContainer>
+    <>
+      <Container>
+        <HeaderContainer>
+          <HeaderTitle>Portfólio de Gabriel</HeaderTitle>
+        </HeaderContainer>
+        <ButtonsContainer>
+        <BasicButton title="Home" to="/home" />
+          <BasicButton title={"Meus Projetos"}  />
+        </ButtonsContainer>
+        {visibleButton && (
+          <ButtonsContainer>
+            <BasicButton title={"Angular"} />
+            <BasicButton title={"React"} />
+            <BasicButton title={"Back-End"} />
+            <BasicButton title={"Academicos"} />
+          </ButtonsContainer>
+        )}
+      </Container>
+      <Divider />
+    </>
   );
 };
