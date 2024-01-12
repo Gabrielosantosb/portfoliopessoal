@@ -1,19 +1,19 @@
 import React from "react";
 import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import dogsImage1 from "../../assets/reactImages/instaDogs/dogsImage1.png";
-import dogsImage2 from "../../assets/reactImages/instaDogs/dogsImage2.png";
-import dogsImage3 from "../../assets/reactImages/instaDogs/dogsImage3.png";
-import hanoiImage1 from "../../assets/reactImages/hanoiMobile/hanoiImage1.jpeg";
-import hanoiImage2 from "../../assets/reactImages/hanoiMobile/hanoiImage2.jpeg";
-import hanoiImage3 from "../../assets/reactImages/hanoiMobile/hanoiImage3.jpeg";
-import hanoiImage4 from "../../assets/reactImages/hanoiMobile/hanoiImage4.jpeg";
-import hanoiImage5 from "../../assets/reactImages/hanoiMobile/hanoiImage5.jpeg";
-import hanoiImage6 from "../../assets/reactImages/hanoiMobile/hanoiImage6.jpeg";
-import organoImage1 from "../../assets/reactImages/organo/organo1.png";
-import organoImage2 from "../../assets/reactImages/organo/organo2.png";
-import organoImage3 from "../../assets/reactImages/organo/organo3.png";
-import organoImage4 from "../../assets/reactImages/organo/organo4.png";
+import dogsImage1 from "../../../assets/reactImages/instaDogs/dogsImage1.png";
+import dogsImage2 from "../../../assets/reactImages/instaDogs/dogsImage2.png";
+import dogsImage3 from "../../../assets/reactImages/instaDogs/dogsImage3.png";
+import hanoiImage1 from "../../../assets/reactImages/hanoiMobile/hanoiImage1.jpeg";
+import hanoiImage2 from "../../../assets/reactImages/hanoiMobile/hanoiImage2.jpeg";
+import hanoiImage3 from "../../../assets/reactImages/hanoiMobile/hanoiImage3.jpeg";
+import hanoiImage4 from "../../../assets/reactImages/hanoiMobile/hanoiImage4.jpeg";
+import hanoiImage5 from "../../../assets/reactImages/hanoiMobile/hanoiImage5.jpeg";
+import hanoiImage6 from "../../../assets/reactImages/hanoiMobile/hanoiImage6.jpeg";
+import organoImage1 from "../../../assets/reactImages/organo/organo1.png";
+import organoImage2 from "../../../assets/reactImages/organo/organo2.png";
+import organoImage3 from "../../../assets/reactImages/organo/organo3.png";
+import organoImage4 from "../../../assets/reactImages/organo/organo4.png";
 
 import {
   LinksContainer,
@@ -21,7 +21,7 @@ import {
   SubTitle,
   Title,
   TitleLink,
-} from "../projects/styles";
+} from "../../projects/styles";
 // import { Container } from './styles';
 
 export const GalleryImages = ({ instaDogs, hanoi, organo }) => {

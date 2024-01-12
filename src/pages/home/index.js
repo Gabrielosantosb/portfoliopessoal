@@ -1,12 +1,12 @@
 import React from "react";
-import styled from "styled-components";
 import { Container, Description, ProfessionalSummary, Title } from "./styles";
-import { GalleryImages } from "../../components/galleryImages";
+
+
 
 export const Home = () => {
   return (
     <Container>
-      <GalleryImages></GalleryImages>
+      
       <ProfessionalSummary>
         <Title>Professional Summary</Title>
         <Description>

@@ -4,7 +4,7 @@ import {
   ProjectTitle,
   ProjectsContainer,
 } from "../styles";
-import { GalleryImages } from "../../../components/galleryImages";
+import { GalleryImages } from "../../../components/galleryImages/galleryReact";
 export const ReactPage = () => {
   return (
     <ProjectsContainer>
