@@ -1,18 +1,26 @@
+import { Routes } from "react-router";
+import { animated } from "react-spring";
 import styled, { createGlobalStyle } from "styled-components";
 
+
+export const StyledFadeIn = styled(animated.div)`
+    opacity: ${(props) => props.opacity};
+
+`
 export const GlobalStyles = createGlobalStyle`
   body {
     background-color: ${(props) => props.theme.backgroundColor};
     color: ${(props) => props.theme.textColor};
-      transition: ${(props) => props.theme.transition}; 
+    transition: background-color 0.2s, color 0.2s;
     
   }
 `;
+
 export const ThemeToggleContainer = styled.div`
   display: flex;
-  align-items: center; 
-  justify-content: flex-end; 
-  flex: 1; 
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
 `;
 
 export const ThemeToggle = styled.button`
@@ -30,25 +38,20 @@ export const ThemeToggle = styled.button`
   }
 `;
 
-
 export const lightTheme = {
-  
   backgroundColor: "#fff",
   textColor: "black",
   buttonBackground: "#f0f0f0",
   buttonTextColor: "#333",
-  transition: "background-color 0.2s, color 0.2s", 
 };
-
 
 export const darkTheme = {
   backgroundColor: "#333",
   textColor: "#f8f8ff",
   buttonBackground: "#222",
   buttonTextColor: "#fff",
-  linkBgColor: "#333", 
-  linkTextColor: "#fff", 
-  linkHoverBgColor: "#555", 
-  linkHoverTextColor: "#fff", 
-  transition: "background-color 0.2s, color 0.2s",
+  linkBgColor: "#333",
+  linkTextColor: "#fff",
+  linkHoverBgColor: "#555",
+  linkHoverTextColor: "#fff",
 };
