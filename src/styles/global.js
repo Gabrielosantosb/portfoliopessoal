@@ -17,10 +17,13 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const ThemeToggleContainer = styled.div`
-  display: flex;
+ display: flex;
   align-items: center;
   justify-content: flex-end;
   flex: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 `;
 
 export const ThemeToggle = styled.button`
