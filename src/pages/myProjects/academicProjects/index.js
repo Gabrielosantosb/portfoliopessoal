@@ -7,7 +7,7 @@ export const AcademicPage = () => {
     <FadeIn>
       <ProjectsContainer>
         <HeaderContainer>
-          <ProjectTitle>Projetos Academicos</ProjectTitle>
+          <ProjectTitle>Projetos Acadêmicos</ProjectTitle>
         </HeaderContainer>
         <GalleryAcademicImages rollerCoster />
         <GalleryAcademicImages csv />

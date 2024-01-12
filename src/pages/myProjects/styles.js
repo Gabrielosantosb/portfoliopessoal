@@ -17,9 +17,10 @@ export const HeaderContainer = styled.div`
 
 export const ProjectTitle = styled.h1`
   text-align: center;
-  /* color: #fff; */
-  font-size: 24px;
+  font-size: 32px; 
   margin-bottom: 10px;
+  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
 `;
 export const ProjectsContainer = styled.section`
   display: flex;
