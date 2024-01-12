@@ -24,7 +24,7 @@ import {
 } from "../../projects/styles";
 // import { Container } from './styles';
 
-export const GalleryImages = ({ instaDogs, hanoi, organo }) => {
+export const GalleryReactImages = ({ instaDogs, hanoi, organo }) => {
   const instaDogsImages = [
     {
       original: dogsImage1,

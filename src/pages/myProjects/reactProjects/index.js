@@ -4,16 +4,16 @@ import {
   ProjectTitle,
   ProjectsContainer,
 } from "../styles";
-import { GalleryImages } from "../../../components/galleryImages/galleryReact";
+import { GalleryReactImages } from "../../../components/galleryImages/galleryReact";
 export const ReactPage = () => {
   return (
     <ProjectsContainer>
       <HeaderContainer>
         <ProjectTitle>Projetos React</ProjectTitle>
       </HeaderContainer>
-      <GalleryImages instaDogs />
-      <GalleryImages hanoi />
-      <GalleryImages organo />
+      <GalleryReactImages instaDogs />
+      <GalleryReactImages hanoi />
+      <GalleryReactImages organo />
     </ProjectsContainer>
   );
 };

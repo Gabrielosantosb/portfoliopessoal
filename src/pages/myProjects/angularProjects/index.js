@@ -9,6 +9,7 @@ import {
   ImageContainer,
   SubTitle,
 } from "../styles";
+import { GalleryAngularImages } from "../../../components/galleryImages/galleryAngular";
 
 export const AngularPage = () => {
   return (
@@ -16,35 +17,9 @@ export const AngularPage = () => {
       <HeaderContainer>
         <ProjectTitle>Projetos Angular</ProjectTitle>
       </HeaderContainer>
-      <ProjectCard>
-        <Title>Controle Estoque</Title>
-        <ImageContainer>
-          {/* <Image src={} alt="InstaDogs"/> */}
-        </ImageContainer>
-        <SubTitle>
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-        </SubTitle>
-      </ProjectCard>
-
-      <ProjectCard>
-        <Title>Projeto CRUD</Title>
-        <ImageContainer>
-          {/* <Image src={} alt="InstaDogs"/> */}
-        </ImageContainer>
-        <SubTitle>
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-        </SubTitle>
-      </ProjectCard>
-
-      <ProjectCard>
-        <Title>Aplicativo Previsão do Tempo</Title>
-        <ImageContainer>
-          {/* <Image src={} alt="InstaDogs"/> */}
-        </ImageContainer>
-        <SubTitle>
-          TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-        </SubTitle>
-      </ProjectCard>
+      <GalleryAngularImages stock/>
+      <GalleryAngularImages crud/>
+      <GalleryAngularImages weather/>
     </ProjectsContainer>
   );
 };
