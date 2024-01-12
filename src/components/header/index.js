@@ -5,10 +5,10 @@ import {
   HeaderContainer,
   HeaderTitle,
   Container,
-  HeaderItem,
+  ProjectsButtonsContainer,
   ButtonsContainer,
   Divider,
-  BackEndButton
+  
 } from "./styles";
 import { BasicButton } from "../basicButton";
 
@@ -21,16 +21,16 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
           <HeaderTitle>Portfólio de Gabriel</HeaderTitle>
         </HeaderContainer>
         <ButtonsContainer>
-        <BasicButton title="Home" to="/home" />
-          <BasicButton title={"Meus Projetos"}  />
+        <BasicButton title="Home" to="/home" onPress={() => setVisibleButton(false)}/>
+          <BasicButton title={"Meus Projetos"}  to="/meus-projetos" onPress={() => setVisibleButton(true)}/>
         </ButtonsContainer>
         {visibleButton && (
-          <ButtonsContainer>
-            <BasicButton title={"Angular"} />
-            <BasicButton title={"React"} />
-            <BasicButton title={"Back-End"} />
-            <BasicButton title={"Academicos"} />
-          </ButtonsContainer>
+          <ProjectsButtonsContainer>
+            <BasicButton title={"Angular"} to="/meus-projetos-angular" />
+            <BasicButton title={"React"}to="/meus-projetos-react" />
+            <BasicButton title={"Back-End"} to="/meus-projetos-back"/>
+            <BasicButton title={"Academicos"} to="/meus-projetos-academico"/>
+          </ProjectsButtonsContainer>
         )}
       </Container>
       <Divider />

@@ -5,7 +5,7 @@ import { Projects } from "./components/projects";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles, darkTheme, lightTheme } from "./styles/global";
 import { Home } from "./pages/home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 
 
@@ -22,6 +22,7 @@ function App() {
         <GlobalStyles />
         <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/meus-projetos" element={<Projects />} />
           <Route path="/meus-projetos-angular" element={''} />

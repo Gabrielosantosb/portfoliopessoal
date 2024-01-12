@@ -41,6 +41,12 @@ export const ButtonsContainer = styled.div`
   display: flex;
 
 `
+
+export const ProjectsButtonsContainer = styled.div`
+  margin-top: 50px;
+  display: flex;
+
+`
 export const HeaderItem = styled.button`
   text-align: center;
   list-style: none;
