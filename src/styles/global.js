@@ -4,6 +4,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: ${(props) => props.theme.backgroundColor};
     color: ${(props) => props.theme.textColor};
+      transition: ${(props) => props.theme.transition}; 
     
   }
 `;
@@ -36,16 +37,18 @@ export const lightTheme = {
   textColor: "black",
   buttonBackground: "#f0f0f0",
   buttonTextColor: "#333",
+  transition: "background-color 0.2s, color 0.2s", 
 };
 
 
 export const darkTheme = {
   backgroundColor: "#333",
-  textColor: "#fff",
+  textColor: "#f8f8ff",
   buttonBackground: "#222",
   buttonTextColor: "#fff",
   linkBgColor: "#333", 
   linkTextColor: "#fff", 
   linkHoverBgColor: "#555", 
   linkHoverTextColor: "#fff", 
+  transition: "background-color 0.2s, color 0.2s",
 };
