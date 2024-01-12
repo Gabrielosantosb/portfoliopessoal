@@ -7,7 +7,12 @@ export const GlobalStyles = createGlobalStyle`
     
   }
 `;
-
+export const ThemeToggleContainer = styled.div`
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end; 
+  flex: 1; 
+`;
 
 export const ThemeToggle = styled.button`
   background-color: ${(props) => props.theme.toggleBackground};
