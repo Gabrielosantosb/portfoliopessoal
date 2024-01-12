@@ -69,3 +69,19 @@ export const Divider = styled.div`
   margin-top: 30px;
   margin-bottom: 20px;
 `;
+
+export const SocialIconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-right: 10px;
+    color: ${(props) => (props.isDarkMode ? "#fff" : "#000")}; 
+    text-decoration: none;
+    font-size: 24px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+`;

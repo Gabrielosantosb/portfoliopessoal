@@ -8,9 +8,13 @@ import {
   ProjectsButtonsContainer,
   ButtonsContainer,
   Divider,
+  SocialIconsContainer,
 } from "./styles";
 import { BasicButton } from "../basicButton";
 import { ThemeToggle, ThemeToggleContainer } from "../../styles/global";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
   const [visibleButton, setVisibleButton] = useState(false);
@@ -19,11 +23,30 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
       <Container>
         <HeaderContainer>
           <HeaderTitle>Portfólio de Gabriel</HeaderTitle>
-        <ThemeToggleContainer>
-          <ThemeToggle onClick={toggleDarkMode}>
-            {isDarkMode ? "Modo Claro" : "Modo Escuro"}
-          </ThemeToggle>
-        </ThemeToggleContainer>
+          <SocialIconsContainer isDarkMode={isDarkMode}>
+            <a href="gabrielosantosb@gmail.com">
+              <FaEnvelope />
+            </a>
+            <a
+              href="https://wa.me/61982420900"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp />
+            </a>
+            <a
+              href="https://github.com/Gabrielosantosb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+          </SocialIconsContainer>
+          <ThemeToggleContainer>
+            <ThemeToggle onClick={toggleDarkMode}>
+              {isDarkMode ? "Modo Claro" : "Modo Escuro"}
+            </ThemeToggle>
+          </ThemeToggleContainer>
         </HeaderContainer>
         <ButtonsContainer>
           <BasicButton
@@ -31,6 +54,7 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
             to="/home"
             onPress={() => setVisibleButton(false)}
           />
+
           <BasicButton
             title={"Meus Projetos"}
             to="/meus-projetos"
