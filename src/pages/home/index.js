@@ -1,4 +1,4 @@
-
+// Home.js
 import React from "react";
 import {
   Container,
@@ -9,6 +9,8 @@ import {
   SkillCard,
   ContactContainer,
   ContactCard,
+  ExperienceContainer,
+  ExperienceCard,
 } from "./styles";
 import { FadeIn } from "../../components/fadeIn";
 
@@ -32,12 +34,14 @@ export const Home = () => {
             <ul>
               <li>Lógica de Programação</li>
               <li>React Native</li>
-              <li>Angular</li>              
+              <li>Angular</li>
               <li>SQL</li>
               <li>Postman</li>
-              <li>.NET</li>                                                                            
+              <li>.NET</li>
             </ul>
           </SkillCard>
+        </SkillsContainer>
+{/* 
         <ContactContainer>
           <ContactCard>
             <h3>Contato</h3>
@@ -46,10 +50,22 @@ export const Home = () => {
               <li>GitHub: <a href="https://github.com/Gabrielosantosb" target="_blank" rel="noopener noreferrer">Gabrielosantosb</a></li>
             </ul>
           </ContactCard>
-        </ContactContainer>
-        </SkillsContainer>
+        </ContactContainer> */}
 
-
+        <ExperienceContainer>
+          <ExperienceCard>
+            <h3>Experiência</h3>
+            <p>
+              <strong>Estágio em Desenvolvimento - UniversalPay</strong>
+              <br />
+              - Participação ativa na criação e manutenção do aplicativo UniversalPay, utilizando React Native com auxílio Expo.
+              <br />
+              - Realização de manutenções no site de pagamentos, com o uso de Angular 14.
+              <br />
+              - Execução de consultas SQL e realização de testes com Postman.
+            </p>
+          </ExperienceCard>          
+        </ExperienceContainer>
       </Container>
     </FadeIn>
   );

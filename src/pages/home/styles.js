@@ -2,11 +2,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
+   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  height: 100vh;
+  justify-content: center;
+  min-height: 100vh;
+  margin-bottom: 60px;
 `;
 
 export const ProfessionalSummary = styled.div`
@@ -17,7 +18,7 @@ export const ProfessionalSummary = styled.div`
 
 export const Title = styled.h2`
   color: ${(props) => props.theme.textColor};
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 20px;
 `;
 
@@ -43,7 +44,7 @@ export const SkillCard = styled.div`
   max-width: 300px;
 
   h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
 
@@ -54,6 +55,7 @@ export const SkillCard = styled.div`
   }
 
   li {
+    font-size: 16px;
     margin-bottom: 8px;
   }
 `;
@@ -74,7 +76,7 @@ export const ContactCard = styled.div`
   max-width: 300px;
 
   h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
 
@@ -85,6 +87,7 @@ export const ContactCard = styled.div`
   }
 
   li {
+    font-size: 16px;
     margin-bottom: 8px;
   }
 
@@ -94,5 +97,31 @@ export const ContactCard = styled.div`
     &:hover {
       color: ${(props) => props.theme.linkHoverTextColor};
     }
+  }
+`;
+
+export const ExperienceContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+`;
+
+export const ExperienceCard = styled.div`
+  background-color: ${(props) => props.theme.backgroundColor};
+  color: ${(props) => props.theme.textColor};
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+  max-width: 800px;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
   }
 `;
