@@ -39,18 +39,19 @@ export const LinksContainer = styled.div`
 export const TitleLink = styled.a`
   display: inline-block;
   text-align: center;
-  padding: 10px;
+  padding: 12px 20px; 
   margin: 10px;
-  font-size: 18px;
+  font-size: 24px; 
   background-color: ${(props) => props.theme.linkBgColor};
   color: ${(props) => props.theme.linkTextColor};
-  border-radius: 5px;
+  border-radius: 8px; 
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; 
 
   :hover {
     background-color: ${(props) => props.theme.linkHoverBgColor};
     color: ${(props) => props.theme.linkHoverTextColor};
+    transform: scale(1.05); 
   }
 `;
 
