@@ -1,8 +1,7 @@
 import React from 'react'
 import {
     HeaderContainer,
-    ProjectTitle,
-    PageContainer,
+    ProjectTitle,    
     ProjectsContainer,
     ProjectCard,
     Title,
