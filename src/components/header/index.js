@@ -24,7 +24,7 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
         <HeaderContainer>
           <HeaderTitle>Portfólio de Gabriel</HeaderTitle>
           <SocialIconsContainer isDarkMode={isDarkMode}>
-            <a href="gabrielosantosb@gmail.com">
+            <a  href="mailto:gabrielosantosb@gmail.com">
               <FaEnvelope />
             </a>
             <a
