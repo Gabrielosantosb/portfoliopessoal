@@ -87,12 +87,12 @@ export const GalleryAngularImages = ({ stock, crud, weather }) => {
           memory leaks, gerenciamento de cookies e autenticação."
         </SubTitle>
         <LinksContainer>
-          <TitleLink href="https://github.com/Gabrielosantosb/InstaDogs">
-            Link para o código
+          <TitleLink href="https://github.com/Gabrielosantosb/ControleEstoque">
+            Link para o repositório
           </TitleLink>
-          <TitleLink href="https://insta-dogs-nine.vercel.app/home">
+          {/* <TitleLink href="https://insta-dogs-nine.vercel.app/home">
             Link para o projeto
-          </TitleLink>
+          </TitleLink> */}
         </LinksContainer>
       </ProjectCard>
     );
@@ -110,8 +110,8 @@ export const GalleryAngularImages = ({ stock, crud, weather }) => {
           edição, atualização e remoção
         </SubTitle>
         <LinksContainer>
-          <TitleLink href="https://github.com/Gabrielosantosb/hanoiTorreMobile">
-            Link para o código
+          <TitleLink href="https://github.com/Gabrielosantosb/crudAngular">
+            Link para o repositório
           </TitleLink>
         </LinksContainer>
       </ProjectCard>
@@ -131,10 +131,10 @@ export const GalleryAngularImages = ({ stock, crud, weather }) => {
           externa para oferecer informações atualizadas
         </SubTitle>
         <LinksContainer>
-          <TitleLink href="https://github.com/Gabrielosantosb/organo2">
-            Link para o código
+          <TitleLink href="https://github.com/Gabrielosantosb/WeatherApplication">
+            Link para o repositório
           </TitleLink>
-          <TitleLink href="https://organo-project-xi.vercel.app">
+          <TitleLink href="https://vercel.com/gabrielosantosb/weather-application/CjtekH8TtwpwYWkqg8t6yiKMdLzP">
             Link para o projeto
           </TitleLink>
         </LinksContainer>
