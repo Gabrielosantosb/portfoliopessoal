@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 
 export const CustomButton = styled(Link)`
   margin: 10px;
-  background-color: #3498db;
+  background-color: ${(props) => (props.selected ? "#e74c3c" : "#3498db")};
   color: white;
   padding: 12px 24px;
   font-size: 18px;
@@ -15,5 +15,10 @@ export const CustomButton = styled(Link)`
 
   &:hover {
     background-color: #2980b9;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 10px;
+    background-color: ${(props) => (props.selected ? "#e74c3c" : "#3498db")};
   }
 `;

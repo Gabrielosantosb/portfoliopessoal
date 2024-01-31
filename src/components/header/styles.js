@@ -34,7 +34,7 @@ export const HeaderTitle = styled.p`
 
 export const HeaderList = styled.ul`
   display: flex;
-  flex: 1; /* Ocupar espaço disponível */
+  flex: 1; 
 `;
 
 export const ButtonsContainer = styled.div`
@@ -43,8 +43,17 @@ export const ButtonsContainer = styled.div`
 `
 
 export const ProjectsButtonsContainer = styled.div`
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
+  transition:1;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
+
+export const SingleButtonContainer = styled.div`
+  margin-top: 30px;
 
 `
 export const HeaderItem = styled.button`

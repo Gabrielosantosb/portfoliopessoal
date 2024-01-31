@@ -9,11 +9,11 @@ import {
   ButtonsContainer,
   Divider,
   SocialIconsContainer,
+  SingleButtonContainer,
 } from "./styles";
 import { BasicButton } from "../basicButton";
 import { ThemeToggle, ThemeToggleContainer } from "../../styles/global";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
 import { FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
@@ -63,10 +63,18 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
         </ButtonsContainer>
         {visibleButton && (
           <ProjectsButtonsContainer>
-            <BasicButton title={"Angular"} to="/meus-projetos-angular" />
-            <BasicButton title={"React"} to="/meus-projetos-react" />
-            <BasicButton title={"Back-End"} to="/meus-projetos-back" />
-            <BasicButton title={"Academicos"} to="/meus-projetos-academico" />
+            <SingleButtonContainer>
+              <BasicButton title={"Angular"} to="/meus-projetos-angular" />
+            </SingleButtonContainer>
+            <SingleButtonContainer>
+              <BasicButton title={"React"} to="/meus-projetos-react" />
+            </SingleButtonContainer>
+            <SingleButtonContainer>
+              <BasicButton title={"Back-End"} to="/meus-projetos-back" />
+            </SingleButtonContainer>
+            <SingleButtonContainer>
+              <BasicButton title={"Academicos"} to="/meus-projetos-academico" />
+            </SingleButtonContainer>
           </ProjectsButtonsContainer>
         )}
       </Container>

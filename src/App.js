@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
-import { Projects } from "./components/projects";
 import { ThemeProvider } from "styled-components";
-import {
-  AnimatedPages,
+import {  
   GlobalStyles,
   darkTheme,
   lightTheme,
@@ -41,7 +39,7 @@ function App() {
             <Route path="/meus-projetos-back" element={<BackEndPage />} />
             <Route path="/meus-projetos-academico" element={<AcademicPage />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
       </ThemeProvider>
     </Router>
   );

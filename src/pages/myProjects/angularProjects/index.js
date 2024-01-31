@@ -12,6 +12,7 @@ export const AngularPage = () => {
         </HeaderContainer>
         <GalleryAngularImages stock />
         <GalleryAngularImages crud />
+        <GalleryAngularImages todo />
         <GalleryAngularImages weather />
       </ProjectsContainer>
     </FadeIn>
