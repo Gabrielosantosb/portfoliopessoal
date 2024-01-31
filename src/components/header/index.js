@@ -63,6 +63,18 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
         </ButtonsContainer>
         {visibleButton && (
           <ProjectsButtonsContainer>
+            <div style={{ marginTop: 30 }}>
+              <BasicButton title={"Angular"} to="/meus-projetos-angular" />
+            </div>
+            <div style={{ marginTop: 30 }}>
+              <BasicButton title={"React"} to="/meus-projetos-react" />
+            </div>
+            <div style={{ marginTop: 30 }}>
+              <BasicButton title={"Back-End"} to="/meus-projetos-back" />
+            </div>
+            <div style={{ marginTop: 30 }}>
+              <BasicButton title={"Academicos"} to="/meus-projetos-academico" />
+            </div>
             <SingleButtonContainer>
               <BasicButton title={"Angular"} to="/meus-projetos-angular" />
             </SingleButtonContainer>

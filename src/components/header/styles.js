@@ -26,14 +26,14 @@ export const HeaderTitle = styled.p`
   padding: 10px;
   &:hover {
     color: gray;
-    /* border-bottom: 2px solid black; */
-    /* border-radius: 10px; */
+    
     transition: 0.1s;  
   }
 `
 
 export const HeaderList = styled.ul`
   display: flex;
+  flex: 1; 
   flex: 1; 
 `;
 
@@ -45,17 +45,14 @@ export const ButtonsContainer = styled.div`
 export const ProjectsButtonsContainer = styled.div`
   margin-top: 20px;
   display: flex;
-  transition:1;
-  @media (max-width: 768px) {
-    flex-direction: column;
+  transition: 0.5;
+
+  @media (max-width: 600px) {  
+    flex-direction: column; 
     align-items: center;
   }
-`
 
-export const SingleButtonContainer = styled.div`
-  margin-top: 30px;
-
-`
+`;
 export const HeaderItem = styled.button`
   text-align: center;
   list-style: none;
