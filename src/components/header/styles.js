@@ -76,6 +76,9 @@ export const Divider = styled.div`
   margin-bottom: 20px;
 `;
 
+export const SingleButtonContainer = styled.div`
+  margin-top: 30px;
+`
 export const SocialIconsContainer = styled.div`
   display: flex;
   align-items: center;
