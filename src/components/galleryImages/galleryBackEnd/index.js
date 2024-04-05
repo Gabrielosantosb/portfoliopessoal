@@ -52,7 +52,7 @@ export const GalleryBackEnd = ({ lojaAPI, crudAPI, catalogAPI, anamneseAPI }) =>
       Este back-end é essencial para gerenciar dados e operações críticas do sistema. Incluindo migrations de banco de dados, criptografia de senha, entre outros...
       </SubTitle>
       <LinksContainer>
-        <TitleLink href="https://github.com/Gabrielosantosb/LojaAPI">
+        <TitleLink href="https://github.com/Gabrielosantosb/Anamnese-BackEnd">
           Link para o repositório
         </TitleLink>
       </LinksContainer>
