@@ -4,6 +4,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import lojaImage from "../../../assets/backEndProjects/lojaApi/lojaImage.png";
 import minimalCatalogImage from "../../../assets/backEndProjects/minimalCatalogApi/minimalCatalogImage.png";
 import crudImage from "../../../assets/backEndProjects/crud/crudImage.png";
+import anamneseImage from "../../../assets/backEndProjects/anamnese-backend/anamneseback.png";
 
 import {
   LinksContainer,
@@ -13,7 +14,13 @@ import {
   TitleLink,
 } from "../../projects/styles";
 
-export const GalleryBackEnd = ({ lojaAPI, crudAPI, catalogAPI }) => {
+export const GalleryBackEnd = ({ lojaAPI, crudAPI, catalogAPI, anamneseAPI }) => {
+  const anamneseAPIImages = [
+    {
+      original: anamneseImage,
+    },
+  ];
+  
   const lojaImages = [
     {
       original: lojaImage,
@@ -31,6 +38,27 @@ export const GalleryBackEnd = ({ lojaAPI, crudAPI, catalogAPI }) => {
       original: crudImage,
     },
   ];
+  if (anamneseAPI)
+  return (
+    <ProjectCard>
+      <Title>Anamnese API</Title>
+      <ReactImageGallery
+        items={anamneseAPIImages}
+        showPlayButton={false}
+        slideInterval={1000}
+      ></ReactImageGallery>
+      <SubTitle>
+      Back-end para o projeto Anamnese, utilizando .NET 5. 
+      Este back-end é essencial para gerenciar dados e operações críticas do sistema. Incluindo migrations de banco de dados, criptografia de senha, entre outros...
+      </SubTitle>
+      <LinksContainer>
+        <TitleLink href="https://github.com/Gabrielosantosb/LojaAPI">
+          Link para o repositório
+        </TitleLink>
+      </LinksContainer>
+    </ProjectCard>
+  );
+
   if (lojaAPI)
     return (
       <ProjectCard>

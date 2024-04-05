@@ -9,6 +9,7 @@ export const BackEndPage = () => {
         <HeaderContainer>
           <ProjectTitle>Projetos Back-End</ProjectTitle>
         </HeaderContainer>
+        <GalleryBackEnd anamneseAPI/>
         <GalleryBackEnd lojaAPI />
         <GalleryBackEnd catalogAPI />
         <GalleryBackEnd crudAPI />
