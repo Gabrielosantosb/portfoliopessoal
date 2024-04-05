@@ -10,6 +10,7 @@ export const AngularPage = () => {
         <HeaderContainer>
           <ProjectTitle>Projetos Angular</ProjectTitle>
         </HeaderContainer>
+        <GalleryAngularImages anamnese />
         <GalleryAngularImages stock />
         <GalleryAngularImages crud />
         <GalleryAngularImages todo />

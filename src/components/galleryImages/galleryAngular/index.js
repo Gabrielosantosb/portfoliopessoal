@@ -15,6 +15,15 @@ import todoImage1 from "../../../assets/angularImages/todoImages/todoImage1.png"
 import todoImage2 from "../../../assets/angularImages/todoImages/todoImage2.png"
 import todoImage3 from "../../../assets/angularImages/todoImages/todoImage3.png"
 import todoImage4 from "../../../assets/angularImages/todoImages/todoImage4.png"
+import anamneseImage1 from "../../../assets/angularImages/anamnese/anamnese1.png"
+import anamneseImage2 from "../../../assets/angularImages/anamnese/anamnese2.png"
+import anamneseImage3 from "../../../assets/angularImages/anamnese/anamnese3.png"
+import anamneseImage4 from "../../../assets/angularImages/anamnese/anamnese-4.png"
+import anamneseImage5 from "../../../assets/angularImages/anamnese/anamnese5.png"
+import anamneseImage6 from "../../../assets/angularImages/anamnese/anamnese6.png"
+import anamneseImage7 from "../../../assets/angularImages/anamnese/anamnese7.png"
+
+
 
 import {
   LinksContainer,
@@ -24,7 +33,46 @@ import {
   TitleLink,
 } from "../../projects/styles";
 
-export const GalleryAngularImages = ({ stock, crud, todo, weather }) => {
+export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese }) => {
+
+
+  const anamneseImages = [
+    {
+      original: anamneseImage1,
+      thumbnail: anamneseImage1,
+    },
+    {
+      original: anamneseImage2,
+      thumbnail: anamneseImage2,
+    },
+
+    {
+      original: anamneseImage3,
+      thumbnail: anamneseImage3,
+    },
+
+    {
+      original: anamneseImage4,
+      thumbnail: anamneseImage4,
+    },
+    {
+      original: anamneseImage5,
+      thumbnail: anamneseImage5,
+    },
+    {
+      original: anamneseImage5,
+      thumbnail: anamneseImage5,
+    },
+    {
+      original: anamneseImage6,
+      thumbnail: anamneseImage6,
+    },
+    {
+      original: anamneseImage7,
+      thumbnail: anamneseImage7,
+    },
+  ];
+
   const stockImages = [
     {
       original: stockImage1,
@@ -98,6 +146,29 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather }) => {
       thumbnail: weatherImage3,
     },
   ];
+
+  if (anamnese)
+  return (
+    <ProjectCard>
+      <Title>Projeto Anamnese</Title>
+      <ReactImageGallery
+        items={anamneseImages}
+        showPlayButton={false}
+        slideInterval={1000}
+      ></ReactImageGallery>
+      <SubTitle>
+      Projeto em Angular para aprimorar nosso sistema de ficha anamnese, onde integramos autenticação e preenchimento de formulários de forma eficiente. Uma das peças-chave desse projeto é a utilização da biblioteca PrimeNG.
+      </SubTitle>
+      <LinksContainer>
+        <TitleLink href="https://github.com/Gabrielosantosb/Anamnese-FrontEnd">
+          Link para o repositório
+        </TitleLink>
+        {/* <TitleLink href="https://insta-dogs-nine.vercel.app/home">
+          Link para o projeto
+        </TitleLink> */}
+      </LinksContainer>
+    </ProjectCard>
+  );
 
   if (stock)
     return (
