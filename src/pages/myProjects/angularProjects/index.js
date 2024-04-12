@@ -11,10 +11,10 @@ export const AngularPage = () => {
           <ProjectTitle>Projetos Angular</ProjectTitle>
         </HeaderContainer>
         <GalleryAngularImages anamnese />
+        <GalleryAngularImages paymentSimulation/>
         <GalleryAngularImages stock />
+        <GalleryAngularImages todo />    
         <GalleryAngularImages crud />
-        <GalleryAngularImages todo />
-        <GalleryAngularImages weather />
       </ProjectsContainer>
     </FadeIn>
   );

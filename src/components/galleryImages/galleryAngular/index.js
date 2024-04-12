@@ -23,6 +23,12 @@ import anamneseImage5 from "../../../assets/angularImages/anamnese/anamnese5.png
 import anamneseImage6 from "../../../assets/angularImages/anamnese/anamnese6.png"
 import anamneseImage7 from "../../../assets/angularImages/anamnese/anamnese7.png"
 
+import paymentImage1 from "../../../assets/angularImages/payment_simulation/simulation1.png"
+import paymentImage2 from "../../../assets/angularImages/payment_simulation/simulation2.png"
+import paymentImage3 from "../../../assets/angularImages/payment_simulation/simulation_3.png"
+import paymentImage4 from "../../../assets/angularImages/payment_simulation/simulation_4.png"
+import paymentImage5 from "../../../assets/angularImages/payment_simulation/simulation_5.png"
+
 
 
 import {
@@ -33,8 +39,34 @@ import {
   TitleLink,
 } from "../../projects/styles";
 
-export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese }) => {
+export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese, paymentSimulation }) => {
 
+
+
+  const paymentSimulationImages = [
+    {
+      original: paymentImage1,
+      thumbnail: paymentImage1,
+    },
+    {
+      original: paymentImage2,
+      thumbnail: paymentImage2,
+    },
+
+    {
+      original: paymentImage3,
+      thumbnail: paymentImage3,
+    },
+
+    {
+      original: paymentImage4,
+      thumbnail: paymentImage4,
+    },
+    {
+      original: paymentImage5,
+      thumbnail: paymentImage5,
+    },    
+  ];
 
   const anamneseImages = [
     {
@@ -161,6 +193,29 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese }) =>
       </SubTitle>
       <LinksContainer>
         <TitleLink href="https://github.com/Gabrielosantosb/Anamnese-FrontEnd">
+          Link para o repositório
+        </TitleLink>
+        {/* <TitleLink href="https://insta-dogs-nine.vercel.app/home">
+          Link para o projeto
+        </TitleLink> */}
+      </LinksContainer>
+    </ProjectCard>
+  );
+
+  if(paymentSimulation)
+  return (
+    <ProjectCard>
+      <Title>Simualação de Pagamento</Title>
+      <ReactImageGallery
+        items={paymentSimulationImages}
+        showPlayButton={false}
+        slideInterval={1000}
+      ></ReactImageGallery>
+      <SubTitle>
+      Este projeto Angular destaca a criação de uma interface responsiva e atraente, priorizando HTML e CSS. Embora a lógica de programação seja secundária, o foco está na usabilidade e na estética, com atenção especial à adaptação a diferentes dispositivos e à acessibilidade para todos os usuários.
+      </SubTitle>
+      <LinksContainer>
+        <TitleLink href="https://github.com/Gabrielosantosb/SimulacaoPagamento">
           Link para o repositório
         </TitleLink>
         {/* <TitleLink href="https://insta-dogs-nine.vercel.app/home">
