@@ -22,6 +22,7 @@ import anamneseImage4 from "../../../assets/angularImages/anamnese/anamnese-4.pn
 import anamneseImage5 from "../../../assets/angularImages/anamnese/anamnese5.png"
 import anamneseImage6 from "../../../assets/angularImages/anamnese/anamnese6.png"
 import anamneseImage7 from "../../../assets/angularImages/anamnese/anamnese7.png"
+import anamneseImage8 from "../../../assets/angularImages/anamnese/anamnese8.png"
 
 import paymentImage1 from "../../../assets/angularImages/payment_simulation/simulation1.png"
 import paymentImage2 from "../../../assets/angularImages/payment_simulation/simulation2.png"
@@ -74,6 +75,10 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese, paym
       thumbnail: anamneseImage1,
     },
     {
+      original: anamneseImage8,
+      thumbnail: anamneseImage8,
+    },
+    {
       original: anamneseImage2,
       thumbnail: anamneseImage2,
     },
@@ -86,10 +91,6 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese, paym
     {
       original: anamneseImage4,
       thumbnail: anamneseImage4,
-    },
-    {
-      original: anamneseImage5,
-      thumbnail: anamneseImage5,
     },
     {
       original: anamneseImage5,
