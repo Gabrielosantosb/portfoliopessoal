@@ -38,10 +38,19 @@ export const Home = () => {
               UniversalPay, utilizando React Native com auxílio Expo.
             </CardP>
             <CardP>
-              - Realização de manutenções no site de pagamentos, com o uso de
-              Angular 14.
+              - Realização de manutenções no site de pagamentos, com o uso do
+              Angular.
             </CardP>
-            <CardSubtitle>
+            <CardP>
+              -Integrações, melhorias e resoluções de problemas no sistema Back-End, com o uso de .NET
+            </CardP>
+            <CardP>
+              -Atualmente participo ativamente na implementação de
+              melhorias nas principais aplicações da
+              empresa, tanto Front-End em Angular, como
+              em .NET
+            </CardP>
+            {/* <CardSubtitle>
               Desenvolvedor Junior - UniversalPay
             </CardSubtitle>
             <CardP>
@@ -52,7 +61,7 @@ export const Home = () => {
               melhorias nas principais aplicações da
               empresa, tanto Front-End em Angular, como
               em .NET
-            </CardP>
+            </CardP> */}
           </CommonCard>
         </CommonContainer>
 
