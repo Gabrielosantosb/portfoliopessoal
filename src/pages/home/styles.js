@@ -1,18 +1,45 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-   display: flex;
+export const ContainerIntodrodution = styled.div`
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin-bottom: 60px;
+  margin-left: 10%; 
+  
+  @media (min-width: 768px) {
+    flex-direction: row; 
+  }
 `;
 
 export const ProfessionalSummary = styled.div`
-  max-width: 800px;
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 0; 
+    margin-right: 20px;
+  }
+`;
+export const TitleIntrodution = styled.p`
+  color: rgb(239, 58, 93);
+  font-size: 32px;
+  margin-bottom: 0;
+  margin-left: 0; 
+`;
+
+export const MyNameContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const TitleName = styled.h2`
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px; 
+`;
+
+export const NameText = styled.span`
+  color: white;
+  font-weight: bold;
+  font-size: 42px;
 `;
 
 export const Title = styled.h2`
@@ -21,13 +48,29 @@ export const Title = styled.h2`
   margin-bottom: 20px;
 `;
 
+export const DescriptionConteiner = styled.div`
+  max-width: 800px;    
+`;
+
 export const Description = styled.p`
   font-size: 22px;
   color: ${(props) => props.theme.textColor};
   line-height: 1.6;
+  margin: 0; 
 `;
 
-
+export const DescriptionRed = styled.span`
+  font-size: 22px;
+  color: rgb(239, 58, 93);
+  line-height: 1.6;
+`
+export const SVGContainer = styled.div`
+  margin-top: auto; 
+  
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+`;
 
 export const CommonContainer = styled.div`
    display: flex;

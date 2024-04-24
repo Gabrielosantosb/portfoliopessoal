@@ -10,23 +10,41 @@ import {
   CardTitle,
   CardSubtitle,
   CardP,
+  TitleIntrodution,
+  TitleName,
+  MyNameContainer,
+  NameText,
+  DescriptionRed,
+  DescriptionConteiner,
+  ContainerIntodrodution,
+  SVGContainer,
 } from "./styles";
+import DeveloperSVG from "../../assets/svg/developerImg.svg"
 import { FadeIn } from "../../components/fadeIn";
 import { FaEnvelope, FaLaptop, FaTools, FaBook } from "react-icons/fa";
 
 export const Home = () => {
   return (
     <FadeIn>
-      <Container>
+      <ContainerIntodrodution>
         <ProfessionalSummary>
-          <Title>Gabriel Barbosa dos Santos</Title>
-          <Description>
-            Desenvolvedor com experiência em integração e programação, especializado em React
-            Native, Angular e .NET, estou atualmente aprimorando meus conhecimentos como
-            estudante de Ciências da Computação.
-          </Description>
+          <MyNameContainer>
+            <TitleIntrodution>
+              Olá, meu nome é <br />
+              <NameText>Gabriel Barbosa</NameText>
+            </TitleIntrodution>
+          </MyNameContainer>
+          <DescriptionConteiner>
+            <Description>
+              Sou um <DescriptionRed>Desenvolvedor</DescriptionRed> com experiência em integração e programação, especializado em <DescriptionRed>React Native</DescriptionRed>, <DescriptionRed>Angular</DescriptionRed> e <DescriptionRed>.NET</DescriptionRed>, estou atualmente aprimorando meus conhecimentos como estudante de Ciências da Computação. Estou sempre aberto a novas oportunidades e desafios.
+            </Description>
+          </DescriptionConteiner>
         </ProfessionalSummary>
-
+        <SVGContainer>
+          <img src={DeveloperSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />
+        </SVGContainer>
+      </ContainerIntodrodution>
+      {/* 
         <CommonContainer>
           <CommonCard>
             <CardTitle>Experiência<FaTools style={{ marginLeft: '10px' }} /></CardTitle>
@@ -50,18 +68,6 @@ export const Home = () => {
               empresa, tanto Front-End em Angular, como
               em .NET
             </CardP>
-            {/* <CardSubtitle>
-              Desenvolvedor Junior - UniversalPay
-            </CardSubtitle>
-            <CardP>
-              -Integrações, melhorias e resoluções de problemas no sistema Back-End, com o uso de .NET
-            </CardP>
-            <CardP>
-              -Atualmente participo ativamente na implementação de
-              melhorias nas principais aplicações da
-              empresa, tanto Front-End em Angular, como
-              em .NET
-            </CardP> */}
           </CommonCard>
         </CommonContainer>
 
@@ -106,8 +112,8 @@ export const Home = () => {
               <li>Número: <strong > <a style={{ color: 'black' }} href="https://wa.me/61982420900" target="_blank" rel="noopener noreferrer">61982420900</a></strong></li>
             </ul>
           </CommonCard>
-        </CommonContainer>
-      </Container>
+        </CommonContainer> */}
+      {/* </Container> */}
     </FadeIn>
   );
 };
