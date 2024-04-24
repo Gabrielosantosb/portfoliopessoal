@@ -45,6 +45,7 @@ import {
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
 import CertificateSVG from "../../assets/svg/certification.svg"
 import DivisorPNG from "../../imgs/background/Divisor.png"
+import WppButtonPNG from "../../imgs/background/buttonWpp.png"
 import { FadeIn } from "../../components/fadeIn";
 import { FaEnvelope, FaLaptop, FaTools, FaBook } from "react-icons/fa";
 import { BasicButton } from "../../components/basicButton";
@@ -68,8 +69,9 @@ export const Home = () => {
               </Description>
             </DescriptionConteiner>
             <ButtonContainer>
-
-              <BasicButton title='Entrar em contato'></BasicButton>
+              
+            
+              <BasicButton title='Entrar em contato'><img src={WppButtonPNG} alt="Button"/></BasicButton>
             </ButtonContainer>
           </ProfessionalSummary>
           <SVGContainer>
@@ -114,7 +116,6 @@ export const Home = () => {
                 desafiadores. Vamos trabalhar juntos para criar soluçõesincríveis para sua empresa!</DescriptionExperience>
             </ExperienceDescriptionConteiner>
           </SkillsContainer>
-
         </Profissional>
       </ProfissionalExperienceConteiner>
 

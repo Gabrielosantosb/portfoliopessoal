@@ -5,9 +5,11 @@ import backgroundAcademic from '../../imgs/background/background3.png';
 
 
 export const ContainerResumo = styled.section`
-  background-image: url(${backgroundIntroduction});
+   background-image: url(${backgroundIntroduction});
+  background-size: 100% auto; 
+  background-repeat: no-repeat; 
 
-  /* background-color: aqua; */
+  
 
 `
 export const ContainerIntodrodution = styled.div`
@@ -109,6 +111,8 @@ export const CommonContainer = styled.div`
 
 export const ProfissionalExperienceConteiner = styled.section`  
   background-image: url(${backgroundExperience});    
+  background-size: 100% auto; 
+  background-repeat: no-repeat;   
   
 `
 export const Profissional = styled.div`
@@ -116,6 +120,7 @@ export const Profissional = styled.div`
   justify-content: space-between;
   flex-direction: column;
   margin-left: 10%;
+  
 
   
   @media (min-width: 768px) {
@@ -136,6 +141,7 @@ export const ExperienceSubtitle = styled.p`
 `
 export const ExperienceDescriptionConteiner = styled.div`
   max-width: 620px;    
+  margin-bottom: 30px;
 `;
 export const ProfissionalExperience = styled.div`
 
@@ -156,38 +162,6 @@ export const DivisorImage = styled.img`
   margin: 0 auto;
 `;
 
-// export const ExperienceContainer = styled.div`  
-//   max-width  :80% ;
-// `;
-
-// export const ExperienceSubtitle = styled.span`
-//   color: black;
-//   font-weight: bold;
-//   font-size: 32px;
-//   `
-// export const ExperienceProfessional = styled.div`
-//   flex: 1;
-//   margin-left: 40%;
-// `;
-
-// export const ExperienceText = styled.p`
-//   font-size: 22px;  
-//   color: black;
-// `
-
-
-// export const MySkills = styled.div`
-//   /* flex: 1; */
-  
-//   /* padding-right: 20px; 
-//   margin-right: 20px;  */
-// `;
-
-// export const SkillsContainer = styled.div`  
-//   /* padding-right: 20px; 
-//   margin-left: 20px;  */
-// `;
-
 // ---------------------------------------FIM EXPERIENCIA PROFISSIONAL-------------------------------------
 
 
@@ -195,6 +169,8 @@ export const DivisorImage = styled.img`
 
 export const AcademicConteiner = styled.section`
   background-image: url(${backgroundAcademic});
+  background-size: 100% auto; 
+  background-repeat: no-repeat; 
 `;
 
 export const Academic = styled.div`
@@ -202,7 +178,7 @@ export const Academic = styled.div`
   justify-content: space-between;
   flex-direction: column;
   margin-left: 10%;
-  margin-top: 10px;
+  
   
   
   @media (min-width: 768px) {
