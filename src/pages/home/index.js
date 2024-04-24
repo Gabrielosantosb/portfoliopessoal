@@ -39,6 +39,8 @@ import {
   Profissional,
   DescriptionExperience,
   ExperienceDescriptionConteiner,
+  DescriptionBolder,
+  DivisorImage,
 } from "./styles";
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
 import CertificateSVG from "../../assets/svg/certification.svg"
@@ -83,16 +85,36 @@ export const Home = () => {
             <ExperienceSubtitle>Estágio em Desenvolvimento - UniversalPay</ExperienceSubtitle>
             <ExperienceDescriptionConteiner>
               <DescriptionExperience>
-                - Participação ativa na <DescriptionRed>criação e manutenção</DescriptionRed> do aplicativo <DescriptionRed>UniversalPay</DescriptionRed>, utilizando <DescriptionRed>React Native</DescriptionRed> com auxílio Expo.<br></br>
+                ● Participação ativa na <DescriptionRed>criação e manutenção</DescriptionRed> do aplicativo <DescriptionRed>UniversalPay</DescriptionRed>, utilizando <DescriptionRed>React Native</DescriptionRed> com auxílio Expo.<br></br>
 
-                - Realização de <DescriptionRed>manutenções no site de pagamentos</DescriptionRed>,com o uso do Angular<br></br>
+                ● Realização de <DescriptionRed>manutenções no site de pagamentos</DescriptionRed>,com o uso do Angular<br></br>
 
-                - Integrações, melhorias e resoluções de problemas nosistema <DescriptionRed>Back-End</DescriptionRed>, com o uso de <DescriptionRed>.NET</DescriptionRed><br></br>
+                ● Integrações, melhorias e resoluções de problemas nosistema <DescriptionRed>Back-End</DescriptionRed>, com o uso de <DescriptionRed>.NET</DescriptionRed><br></br>
 
-                - Atualmente participo ativamente na implementaçãode melhorias nas principais aplicações da empresa,tanto <DescriptionRed>Front-End</DescriptionRed> em Angular, como em .NET<br></br>
+                ● Atualmente participo ativamente na implementaçãode melhorias nas principais aplicações da empresa,tanto <DescriptionRed>Front-End</DescriptionRed> em Angular, como em .NET<br></br>
               </DescriptionExperience>
             </ExperienceDescriptionConteiner>
           </ProfissionalExperience>
+
+          <DivisorImage src={DivisorPNG} alt="Divisor" />
+
+
+          <SkillsContainer>
+            <ExperienceTitle>Minhas habilidades</ExperienceTitle>
+            <ExperienceDescriptionConteiner>
+              <DescriptionExperience>
+                ● <DescriptionBolder>Front-End:</DescriptionBolder> React-Native, Angular, HTML/CSS,JavaScript, TypeScript<br></br>
+
+                ● <DescriptionBolder>Back-End:</DescriptionBolder> ASP .NET Core, SQL,Postman,EntityFramework, SQL<br></br>
+
+                ● <DescriptionBolder>Adicionais:</DescriptionBolder> Git, Docker, ExpoGO, Styled-Components<br></br>
+
+              </DescriptionExperience>
+              <DescriptionExperience>Estou sempre aberto a novos desafios e projetos
+                desafiadores. Vamos trabalhar juntos para criar soluçõesincríveis para sua empresa!</DescriptionExperience>
+            </ExperienceDescriptionConteiner>
+          </SkillsContainer>
+
         </Profissional>
       </ProfissionalExperienceConteiner>
 

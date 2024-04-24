@@ -76,6 +76,12 @@ export const DescriptionRed = styled.span`
   color: #EF3A5D;
   line-height: 1.6;
 `
+
+export const DescriptionBolder = styled.span`
+  font-size: 22px;
+  font-weight: bolder;  
+  line-height: 1.6;
+`
 export const SVGContainer = styled.div`
   margin-top: auto;
   margin-right :10% ;
@@ -141,13 +147,14 @@ export const DescriptionExperience = styled.p`
   line-height: 1.6;
   margin: 0; 
 `;
-
-export const DescriptionPink = styled.span`
-  font-size: 22px;
-  color: #EF3A5D;
-  line-height: 1.6;
+export const SkillsContainer = styled.div`
+margin-right: 5%;
 `
-
+export const DivisorImage = styled.img`
+  width: 100px; 
+  height: auto; 
+  margin: 0 auto;
+`;
 
 // export const ExperienceContainer = styled.div`  
 //   max-width  :80% ;
