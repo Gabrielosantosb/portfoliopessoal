@@ -27,9 +27,8 @@ function App() {
   };
   return (
     <Router>
-      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>    
-          <GlobalStyles />
-          <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>              
+          {/* <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} /> */}
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />

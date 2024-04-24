@@ -1,10 +1,21 @@
 import styled from "styled-components";
+import backgroundIntroduction from '../../imgs/background/background1.png';
+import backgroundExperience from '../../imgs/background/background2.png';
+import backgroundAcademic from '../../imgs/background/background3.png';
 
+
+export const ContainerResumo = styled.section`
+  background-image: url(${backgroundIntroduction});
+
+  /* background-color: aqua; */
+
+`
 export const ContainerIntodrodution = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-left: 10%; 
+  margin-left: 10%;
+
   
   @media (min-width: 768px) {
     flex-direction: row; 
@@ -38,7 +49,7 @@ export const TitleName = styled.h2`
 `;
 
 export const NameText = styled.span`
-  color: white;
+  color: white;  
   font-weight: bold;
   font-size: 42px;
 `;
@@ -55,7 +66,7 @@ export const DescriptionConteiner = styled.div`
 
 export const Description = styled.p`
   font-size: 22px;
-  color: ${(props) => props.theme.textColor};
+  color: white;
   line-height: 1.6;
   margin: 0; 
 `;
@@ -90,14 +101,13 @@ export const CommonContainer = styled.div`
 
 // ---------------------------------------EXPERIENCIA PROFISSIONAL-------------------------------------
 
-export const ProfissionalExperienceConteiner = styled.section`
-  background-image: linear-gradient(to bottom right, #EFE6E6, #F1A9A9);
-  /* background-color: black; */
+export const ProfissionalExperienceConteiner = styled.section`  
+  background-image: url(${backgroundExperience});  
   color: black;  
   
 `
 export const ExperienceContainer = styled.div`
-  margin-left: 10%; 
+  margin-left: 5%; 
   max-width  :50% ;
 `;
 
@@ -114,37 +124,81 @@ export const ExperienceSubtitle = styled.span`
 export const ProfissionalExperience = styled.div`
   display: flex;
   align-items: flex-start;
-  height: 100%; /* Adicionando altura total para que o divisor seja visível */
+  height: 100%;
 `;
 
 export const ExperienceText = styled.p`
-  font-size: 22px;
-  /* color: ${(props) => props.theme.textColor}; */
+  font-size: 22px;  
   color: black;
 `
 
-export const DividerExperience = styled.div`
-width: 1px;
-  height: 20%; 
-  background-color: #ccc;
-  position: absolute; 
-  
-  left: 50%; /* Posicionando o divisor no centro vertical do contêiner pai */
-  transform: translateX(-50%); /* Centralizando o divisor verticalmente */
-`;
 export const ExperienceProfessional = styled.div`
   flex: 1;
 `;
 
 export const MySkills = styled.div`
   flex: 1;
+  border-right: 1px solid #ccc; 
+  padding-right: 20px; 
+  margin-right: 20px; 
 `;
 
-
-export const SkillsContainer = styled.div`
-  margin-top: 20px; /* Espaçamento entre a experiência profissional e as habilidades */
+export const SkillsContainer = styled.div`  
+  padding-right: 20px; 
+  margin-left: 20px; 
+`;
+export const DividerExperience = styled.div`
+  height: 100%; /* Ajuste conforme a altura dos contêineres */
+  width: 1px; /* Largura da linha divisória */
+  background-color: black; /* Cor da linha divisória */
+  align-self: stretch; 
 `;
 // ---------------------------------------FIM EXPERIENCIA PROFISSIONAL-------------------------------------
+
+
+// ----------------------------ACADEMICO------------------------------------------
+
+export const AcademicConteiner = styled.section`
+  background-image: url(${backgroundAcademic});
+`;
+
+export const Academic = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 10px;
+  
+  
+  @media (min-width: 768px) {
+    flex-direction: row; 
+  }
+`;
+
+export const TextContainer = styled.div`
+  flex: 1;
+`;
+
+export const ImageContainer = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const AcademicText = styled.p`
+  font-size: 22px;
+  color: white;
+`;
+
+// Se preferir, você pode usar styled.img ao invés de styled.div para a imagem
+// Isso tornará o código um pouco mais semântico.
+export const AcademicImage = styled.img`
+  width: 500px;
+  height: 600px;
+`;
+
+// --------------------------FIM ACADEMICO------------------------------
+
 
 export const CommonCard = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};

@@ -32,8 +32,13 @@ import {
   DividerExperience,
   ExperienceSubtitle,
   ExperienceTitle,
+  ContainerResumo,
+  AcademicConteiner,
+  Academic,
+  AcademicText,
 } from "./styles";
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
+import CertificateSVG from "../../assets/svg/certification.svg"
 import DividerVerticalSVG from "../../assets/svg/dividerVertical.svg"
 import { FadeIn } from "../../components/fadeIn";
 import { FaEnvelope, FaLaptop, FaTools, FaBook } from "react-icons/fa";
@@ -43,30 +48,32 @@ import { FaGithub, FaWhatsapp } from "react-icons/fa";
 export const Home = () => {
   return (
     <FadeIn>
-      <ContainerIntodrodution>
-        <ProfessionalSummary>
-          <MyNameContainer>
-            <TitleIntrodution>
-              Olá, meu nome é <br />
-              <NameText>Gabriel Barbosa</NameText>
-            </TitleIntrodution>
-          </MyNameContainer>
-          <DescriptionConteiner>
-            <Description>
-              Sou um <DescriptionRed>Desenvolvedor</DescriptionRed> com experiência em integração e programação, especializado em <DescriptionRed>React Native</DescriptionRed>, <DescriptionRed>Angular</DescriptionRed> e <DescriptionRed>.NET</DescriptionRed>, estou atualmente aprimorando meus conhecimentos como estudante de Ciências da Computação. Estou sempre aberto a novas oportunidades e desafios.
-            </Description>
-          </DescriptionConteiner>
-          <ButtonContainer>
+      <ContainerResumo>
+        <ContainerIntodrodution>
+          <ProfessionalSummary>
+            <MyNameContainer>
+              <TitleIntrodution>
+                Olá, meu nome é <br />
+                <NameText>Gabriel Barbosa</NameText>
+              </TitleIntrodution>
+            </MyNameContainer>
+            <DescriptionConteiner>
+              <Description>
+                Sou um <DescriptionRed>Desenvolvedor</DescriptionRed> com experiência em integração e programação, especializado em <DescriptionRed>React Native</DescriptionRed>, <DescriptionRed>Angular</DescriptionRed> e <DescriptionRed>.NET</DescriptionRed>, estou atualmente aprimorando meus conhecimentos como estudante de Ciências da Computação. Estou sempre aberto a novas oportunidades e desafios.
+              </Description>
+            </DescriptionConteiner>
+            <ButtonContainer>
 
-            <BasicButton title='Entrar em contato'></BasicButton>
-          </ButtonContainer>
-        </ProfessionalSummary>
-        <SVGContainer>
-          <img src={DeveloperSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />
-        </SVGContainer>
-      </ContainerIntodrodution>
+              <BasicButton title='Entrar em contato'></BasicButton>
+            </ButtonContainer>
+          </ProfessionalSummary>
+          <SVGContainer>
+            <img src={DeveloperSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />
+          </SVGContainer>
+        </ContainerIntodrodution>
+      </ContainerResumo>
 
-      {/* <ProfissionalExperienceConteiner>
+      <ProfissionalExperienceConteiner>
         <ProfissionalExperience>
           <ExperienceContainer>
             <ExperienceProfessional>
@@ -82,9 +89,9 @@ export const Home = () => {
               </div>
             </ExperienceProfessional>
           </ExperienceContainer>
-          <SVGContainer>
-            <img src={DividerVerticalSVG} alt="Divider" style={{ width: '500px', height: '400px' }} />
-          </SVGContainer>
+
+          <DividerExperience />
+
           <SkillsContainer>
             <MySkills>
               <div>
@@ -99,7 +106,54 @@ export const Home = () => {
             </MySkills>
           </SkillsContainer>
         </ProfissionalExperience>
-      </ProfissionalExperienceConteiner> */}
+      </ProfissionalExperienceConteiner>
+
+      <AcademicConteiner>
+        <Academic>
+          <ProfessionalSummary>
+            <MyNameContainer>
+              <TitleIntrodution>
+              Currículo Acadêmico <br />
+                <NameText>Minhas formações</NameText>
+              </TitleIntrodution>
+            </MyNameContainer>
+            <DescriptionConteiner>
+              <Description>
+              - Bacharelado em Ciências da Computação - 5º semestre Universidade de Brasília (CEUB)<br></br>
+            - Curso React - OrigamidFormação Angular(v2+) - LoianeTrainig<br></br>
+            - Formação Angular 2024 - Udemy<br></br>
+            - Curso Web API ASP .NET Core Essencial (.NET 8) -Udemy<br></br>
+            - Arquitetura de Microsserviços com ASP.NET, .(NET 6)-Udemy<br></br>
+            - Desenvolvimento WEB - Udemy<br></br>
+              </Description>
+            </DescriptionConteiner>
+            <ButtonContainer>              
+            </ButtonContainer>
+          </ProfessionalSummary>
+          <SVGContainer>
+            <img src={CertificateSVG} alt="CertificateSVG" style={{ width: '500px', height: '600px' }} />
+          </SVGContainer>
+        </Academic>
+      </AcademicConteiner>
+      {/* <AcademicConteiner>
+        <Academic>
+          <MyNameContainer>
+            <TitleIntrodution>
+              Currículo Acadêmico <br />
+              <NameText>Minhas formações</NameText>
+            </TitleIntrodution>
+          </MyNameContainer>
+          <AcademicText>
+            - Bacharelado em Ciências da Computação - 5º semestre Universidade de Brasília (CEUB)<br></br>
+            - Curso React - OrigamidFormação Angular(v2+) - LoianeTrainig<br></br>
+            - Formação Angular 2024 - Udemy<br></br>
+            - Curso Web API ASP .NET Core Essencial (.NET 8) -Udemy<br></br>
+            - Arquitetura de Microsserviços com ASP.NET, .(NET 6)-Udemy<br></br>
+            - Desenvolvimento WEB - Udemy<br></br>
+          </AcademicText>
+        </Academic>
+          <img src={CertificateSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />
+      </AcademicConteiner> */}
       {/* 
         <CommonContainer>
           <CommonCard>
