@@ -18,10 +18,27 @@ import {
   DescriptionConteiner,
   ContainerIntodrodution,
   SVGContainer,
+  ButtonContainer,
+  ProfissionalExperienceConteiner,
+  ProfissionalExperience,
+  ExerienceText,
+  Divisor,
+  Divider,
+  MySkills,
+  ExperienceText,
+  ExperienceProfessional,
+  SkillsContainer,
+  ExperienceContainer,
+  DividerExperience,
+  ExperienceSubtitle,
+  ExperienceTitle,
 } from "./styles";
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
+import DividerVerticalSVG from "../../assets/svg/dividerVertical.svg"
 import { FadeIn } from "../../components/fadeIn";
 import { FaEnvelope, FaLaptop, FaTools, FaBook } from "react-icons/fa";
+import { BasicButton } from "../../components/basicButton";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export const Home = () => {
   return (
@@ -39,11 +56,50 @@ export const Home = () => {
               Sou um <DescriptionRed>Desenvolvedor</DescriptionRed> com experiência em integração e programação, especializado em <DescriptionRed>React Native</DescriptionRed>, <DescriptionRed>Angular</DescriptionRed> e <DescriptionRed>.NET</DescriptionRed>, estou atualmente aprimorando meus conhecimentos como estudante de Ciências da Computação. Estou sempre aberto a novas oportunidades e desafios.
             </Description>
           </DescriptionConteiner>
+          <ButtonContainer>
+
+            <BasicButton title='Entrar em contato'></BasicButton>
+          </ButtonContainer>
         </ProfessionalSummary>
         <SVGContainer>
           <img src={DeveloperSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />
         </SVGContainer>
       </ContainerIntodrodution>
+
+      {/* <ProfissionalExperienceConteiner>
+        <ProfissionalExperience>
+          <ExperienceContainer>
+            <ExperienceProfessional>
+              <div>
+                <ExperienceTitle>Experiência Profissional<br></br></ExperienceTitle>
+                <ExperienceSubtitle>Estágio em Desenvolvimento - UniversalPay</ExperienceSubtitle>
+                <ExperienceText>
+                  - Participação ativa na criação e manutenção do aplicativo UniversalPay, utilizando React Native com auxílio Expo.<br></br>
+                  - Realização de manutenções no site de pagamentos, com o uso do Angular.<br></br>
+                  - Integrações, melhorias e resoluções de problemas no sistema Back-End, com o uso de .NET.<br></br>
+                  - Atualmente participo ativamente na implementação de melhorias nas principais aplicações da empresa, tanto Front-End em Angular, como em .NET<br></br>
+                </ExperienceText>
+              </div>
+            </ExperienceProfessional>
+          </ExperienceContainer>
+          <SVGContainer>
+            <img src={DividerVerticalSVG} alt="Divider" style={{ width: '500px', height: '400px' }} />
+          </SVGContainer>
+          <SkillsContainer>
+            <MySkills>
+              <div>
+                <ExperienceTitle>Minhas Habilidades</ExperienceTitle>
+                <ExperienceText>
+                  - Front-End: React-Native, Angular, HTML/CSS, JavaScript, TypeScript<br></br>
+                  - Back-End: ASP .NET Core, SQL, Postman, EntityFramework, SQL<br></br>
+                  - Additional: Git, Docker, ExpoGO, Styled-Components<br></br>
+                  - Estou sempre aberto a novos desafios e projetosdesafiadores. Vamos trabalhar juntos para criar soluçõesincríveis para sua empresa!
+                </ExperienceText>
+              </div>
+            </MySkills>
+          </SkillsContainer>
+        </ProfissionalExperience>
+      </ProfissionalExperienceConteiner> */}
       {/* 
         <CommonContainer>
           <CommonCard>

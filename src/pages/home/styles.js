@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContainerIntodrodution = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   margin-left: 10%; 
   
@@ -65,13 +66,17 @@ export const DescriptionRed = styled.span`
   line-height: 1.6;
 `
 export const SVGContainer = styled.div`
-  margin-top: auto; 
+  margin-top: auto;
+  margin-right :10% ;
   
   @media (min-width: 768px) {
     margin-top: 0;
   }
 `;
+export const ButtonContainer = styled.div`
+margin-top: 30px;
 
+`
 export const CommonContainer = styled.div`
    display: flex;
   flex-direction: column;
@@ -83,6 +88,63 @@ export const CommonContainer = styled.div`
 `;
 
 
+// ---------------------------------------EXPERIENCIA PROFISSIONAL-------------------------------------
+
+export const ProfissionalExperienceConteiner = styled.section`
+  background-image: linear-gradient(to bottom right, #EFE6E6, #F1A9A9);
+  /* background-color: black; */
+  color: black;  
+  
+`
+export const ExperienceContainer = styled.div`
+  margin-left: 10%; 
+  max-width  :50% ;
+`;
+
+export const ExperienceTitle = styled.h2`
+  color: black;
+  font-size: 42px;
+  margin-bottom: 10px; 
+`
+export const ExperienceSubtitle = styled.span`
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
+`
+export const ProfissionalExperience = styled.div`
+  display: flex;
+  align-items: flex-start;
+  height: 100%; /* Adicionando altura total para que o divisor seja visível */
+`;
+
+export const ExperienceText = styled.p`
+  font-size: 22px;
+  /* color: ${(props) => props.theme.textColor}; */
+  color: black;
+`
+
+export const DividerExperience = styled.div`
+width: 1px;
+  height: 20%; 
+  background-color: #ccc;
+  position: absolute; 
+  
+  left: 50%; /* Posicionando o divisor no centro vertical do contêiner pai */
+  transform: translateX(-50%); /* Centralizando o divisor verticalmente */
+`;
+export const ExperienceProfessional = styled.div`
+  flex: 1;
+`;
+
+export const MySkills = styled.div`
+  flex: 1;
+`;
+
+
+export const SkillsContainer = styled.div`
+  margin-top: 20px; /* Espaçamento entre a experiência profissional e as habilidades */
+`;
+// ---------------------------------------FIM EXPERIENCIA PROFISSIONAL-------------------------------------
 
 export const CommonCard = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};
