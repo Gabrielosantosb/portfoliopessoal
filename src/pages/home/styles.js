@@ -37,6 +37,7 @@ export const TitleIntrodution = styled.p`
   font-size: 32px;
   margin-bottom: 0;
   margin-left: 0; 
+  margin-top: 15%;
 `;
 
 export const MyNameContainer = styled.div`

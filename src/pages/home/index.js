@@ -50,10 +50,13 @@ import { FadeIn } from "../../components/fadeIn";
 import { FaEnvelope, FaLaptop, FaTools, FaBook } from "react-icons/fa";
 import { BasicButton } from "../../components/basicButton";
 import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { Header } from "../../components/header";
+
 
 export const Home = () => {
   return (
     <FadeIn>
+      <Header/>
       <ContainerResumo>
         <ContainerIntodrodution>
           <ProfessionalSummary>
