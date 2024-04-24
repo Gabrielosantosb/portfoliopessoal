@@ -36,10 +36,13 @@ import {
   AcademicConteiner,
   Academic,
   AcademicText,
+  Profissional,
+  DescriptionExperience,
+  ExperienceDescriptionConteiner,
 } from "./styles";
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
 import CertificateSVG from "../../assets/svg/certification.svg"
-import DividerVerticalSVG from "../../assets/svg/dividerVertical.svg"
+import DivisorPNG from "../../imgs/background/Divisor.png"
 import { FadeIn } from "../../components/fadeIn";
 import { FaEnvelope, FaLaptop, FaTools, FaBook } from "react-icons/fa";
 import { BasicButton } from "../../components/basicButton";
@@ -74,38 +77,23 @@ export const Home = () => {
       </ContainerResumo>
 
       <ProfissionalExperienceConteiner>
-        <ProfissionalExperience>
-          <ExperienceContainer>
-            <ExperienceProfessional>
-              <div>
-                <ExperienceTitle>Experiência Profissional<br></br></ExperienceTitle>
-                <ExperienceSubtitle>Estágio em Desenvolvimento - UniversalPay</ExperienceSubtitle>
-                <ExperienceText>
-                  - Participação ativa na criação e manutenção do aplicativo UniversalPay, utilizando React Native com auxílio Expo.<br></br>
-                  - Realização de manutenções no site de pagamentos, com o uso do Angular.<br></br>
-                  - Integrações, melhorias e resoluções de problemas no sistema Back-End, com o uso de .NET.<br></br>
-                  - Atualmente participo ativamente na implementação de melhorias nas principais aplicações da empresa, tanto Front-End em Angular, como em .NET<br></br>
-                </ExperienceText>
-              </div>
-            </ExperienceProfessional>
-          </ExperienceContainer>
+        <Profissional>
+          <ProfissionalExperience>
+            <ExperienceTitle>Experiência Profissional</ExperienceTitle>
+            <ExperienceSubtitle>Estágio em Desenvolvimento - UniversalPay</ExperienceSubtitle>
+            <ExperienceDescriptionConteiner>
+              <DescriptionExperience>
+                - Participação ativa na <DescriptionRed>criação e manutenção</DescriptionRed> do aplicativo <DescriptionRed>UniversalPay</DescriptionRed>, utilizando <DescriptionRed>React Native</DescriptionRed> com auxílio Expo.<br></br>
 
-          <DividerExperience />
+                - Realização de <DescriptionRed>manutenções no site de pagamentos</DescriptionRed>,com o uso do Angular<br></br>
 
-          <SkillsContainer>
-            <MySkills>
-              <div>
-                <ExperienceTitle>Minhas Habilidades</ExperienceTitle>
-                <ExperienceText>
-                  - Front-End: React-Native, Angular, HTML/CSS, JavaScript, TypeScript<br></br>
-                  - Back-End: ASP .NET Core, SQL, Postman, EntityFramework, SQL<br></br>
-                  - Additional: Git, Docker, ExpoGO, Styled-Components<br></br>
-                  - Estou sempre aberto a novos desafios e projetosdesafiadores. Vamos trabalhar juntos para criar soluçõesincríveis para sua empresa!
-                </ExperienceText>
-              </div>
-            </MySkills>
-          </SkillsContainer>
-        </ProfissionalExperience>
+                - Integrações, melhorias e resoluções de problemas nosistema <DescriptionRed>Back-End</DescriptionRed>, com o uso de <DescriptionRed>.NET</DescriptionRed><br></br>
+
+                - Atualmente participo ativamente na implementaçãode melhorias nas principais aplicações da empresa,tanto <DescriptionRed>Front-End</DescriptionRed> em Angular, como em .NET<br></br>
+              </DescriptionExperience>
+            </ExperienceDescriptionConteiner>
+          </ProfissionalExperience>
+        </Profissional>
       </ProfissionalExperienceConteiner>
 
       <AcademicConteiner>
@@ -113,21 +101,21 @@ export const Home = () => {
           <ProfessionalSummary>
             <MyNameContainer>
               <TitleIntrodution>
-              Currículo Acadêmico <br />
+                Currículo Acadêmico <br />
                 <NameText>Minhas formações</NameText>
               </TitleIntrodution>
             </MyNameContainer>
             <DescriptionConteiner>
               <Description>
-              - Bacharelado em Ciências da Computação - 5º semestre Universidade de Brasília (CEUB)<br></br>
-            - Curso React - OrigamidFormação Angular(v2+) - LoianeTrainig<br></br>
-            - Formação Angular 2024 - Udemy<br></br>
-            - Curso Web API ASP .NET Core Essencial (.NET 8) -Udemy<br></br>
-            - Arquitetura de Microsserviços com ASP.NET, .(NET 6)-Udemy<br></br>
-            - Desenvolvimento WEB - Udemy<br></br>
+                - Bacharelado em Ciências da Computação - 5º semestre Universidade de Brasília (CEUB)<br></br>
+                - Curso React - OrigamidFormação Angular(v2+) - LoianeTrainig<br></br>
+                - Formação Angular 2024 - Udemy<br></br>
+                - Curso Web API ASP .NET Core Essencial (.NET 8) -Udemy<br></br>
+                - Arquitetura de Microsserviços com ASP.NET, .(NET 6)-Udemy<br></br>
+                - Desenvolvimento WEB - Udemy<br></br>
               </Description>
             </DescriptionConteiner>
-            <ButtonContainer>              
+            <ButtonContainer>
             </ButtonContainer>
           </ProfessionalSummary>
           <SVGContainer>
@@ -135,95 +123,6 @@ export const Home = () => {
           </SVGContainer>
         </Academic>
       </AcademicConteiner>
-      {/* <AcademicConteiner>
-        <Academic>
-          <MyNameContainer>
-            <TitleIntrodution>
-              Currículo Acadêmico <br />
-              <NameText>Minhas formações</NameText>
-            </TitleIntrodution>
-          </MyNameContainer>
-          <AcademicText>
-            - Bacharelado em Ciências da Computação - 5º semestre Universidade de Brasília (CEUB)<br></br>
-            - Curso React - OrigamidFormação Angular(v2+) - LoianeTrainig<br></br>
-            - Formação Angular 2024 - Udemy<br></br>
-            - Curso Web API ASP .NET Core Essencial (.NET 8) -Udemy<br></br>
-            - Arquitetura de Microsserviços com ASP.NET, .(NET 6)-Udemy<br></br>
-            - Desenvolvimento WEB - Udemy<br></br>
-          </AcademicText>
-        </Academic>
-          <img src={CertificateSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />
-      </AcademicConteiner> */}
-      {/* 
-        <CommonContainer>
-          <CommonCard>
-            <CardTitle>Experiência<FaTools style={{ marginLeft: '10px' }} /></CardTitle>
-            <CardSubtitle>
-              Estágio em Desenvolvimento - UniversalPay
-            </CardSubtitle>
-            <CardP>
-              - Participação ativa na criação e manutenção do aplicativo
-              UniversalPay, utilizando React Native com auxílio Expo.
-            </CardP>
-            <CardP>
-              - Realização de manutenções no site de pagamentos, com o uso do
-              Angular.
-            </CardP>
-            <CardP>
-              -Integrações, melhorias e resoluções de problemas no sistema Back-End, com o uso de .NET
-            </CardP>
-            <CardP>
-              -Atualmente participo ativamente na implementação de
-              melhorias nas principais aplicações da
-              empresa, tanto Front-End em Angular, como
-              em .NET
-            </CardP>
-          </CommonCard>
-        </CommonContainer>
-
-        <CommonContainer>
-          <CommonCard>
-            <CardTitle>Habilidades<FaLaptop style={{ marginLeft: '10px' }} /></CardTitle>
-            <ul>
-              <li> ✔<strong>Front-End:</strong> React-Native,
-                Angular, HTML/CSS, JavaScript,
-                TypeScript</li>
-              <li> ✔<strong>Back-End</strong>: ASP .NET Core,
-                SQL,Postman, EntityFramework,
-                SQL</li>
-              <li>✔ <strong>Adicionais:</strong> Git, Docker,
-                ExpoGO, Styled-Components</li>
-            </ul>
-          </CommonCard>
-        </CommonContainer>
-
-        <CommonContainer>
-          <CommonCard>
-            <CardTitle>Acadêmico<FaBook style={{ marginLeft: '10px' }} /></CardTitle>
-            <ul>
-              <li>- Bacharelado em Ciências da Computação - <strong>5º semestre Universidade de Brasília (CEUB)</strong></li>
-              <li>- Curso React - <strong>Origamid</strong></li>
-              <li>- Formação Angular(v2+) - <strong>LoianeTrainig</strong></li>
-              <li>- Formaçãao Angular 2024 - <strong>Udemy</strong></li>
-              <li>- Curso Web API ASP .NET Core Essencial (.NET 8) - <strong>Udemy</strong></li>
-              <li>- Arquitetura de Microsserviços com ASP.NET, .(NET 6)- <strong>Udemy</strong></li>
-              <li>
-                - Desenvolvimento WEB - <strong>Udemy</strong>
-              </li>
-            </ul>
-          </CommonCard>
-        </CommonContainer>
-
-        <CommonContainer>
-          <CommonCard>
-            <CardTitle>Contato <FaEnvelope /></CardTitle>
-            <ul>
-              <li>E-mail : <strong>gabrielosantosb@gmail.com </strong></li>
-              <li>Número: <strong > <a style={{ color: 'black' }} href="https://wa.me/61982420900" target="_blank" rel="noopener noreferrer">61982420900</a></strong></li>
-            </ul>
-          </CommonCard>
-        </CommonContainer> */}
-      {/* </Container> */}
     </FadeIn>
   );
 };

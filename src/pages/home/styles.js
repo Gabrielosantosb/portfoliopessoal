@@ -73,7 +73,7 @@ export const Description = styled.p`
 
 export const DescriptionRed = styled.span`
   font-size: 22px;
-  color: rgb(239, 58, 93);
+  color: #EF3A5D;
   line-height: 1.6;
 `
 export const SVGContainer = styled.div`
@@ -102,57 +102,85 @@ export const CommonContainer = styled.div`
 // ---------------------------------------EXPERIENCIA PROFISSIONAL-------------------------------------
 
 export const ProfissionalExperienceConteiner = styled.section`  
-  background-image: url(${backgroundExperience});  
-  color: black;  
+  background-image: url(${backgroundExperience});    
   
 `
-export const ExperienceContainer = styled.div`
-  margin-left: 5%; 
-  max-width  :50% ;
-`;
+export const Profissional = styled.div`
+   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 10%;
 
+  
+  @media (min-width: 768px) {
+    flex-direction: row; 
+  }
+`;
 export const ExperienceTitle = styled.h2`
   color: black;
   font-size: 42px;
   margin-bottom: 10px; 
 `
-export const ExperienceSubtitle = styled.span`
+
+export const ExperienceSubtitle = styled.p`
   color: black;
+  font-size: 24px;
   font-weight: bold;
-  font-size: 32px;
+  margin-bottom: 10px; 
 `
+export const ExperienceDescriptionConteiner = styled.div`
+  max-width: 620px;    
+`;
 export const ProfissionalExperience = styled.div`
-  display: flex;
-  align-items: flex-start;
-  height: 100%;
+
+
+`
+export const DescriptionExperience = styled.p`
+  font-size: 22px;
+  color: black;
+  line-height: 1.6;
+  margin: 0; 
 `;
 
-export const ExperienceText = styled.p`
-  font-size: 22px;  
-  color: black;
+export const DescriptionPink = styled.span`
+  font-size: 22px;
+  color: #EF3A5D;
+  line-height: 1.6;
 `
 
-export const ExperienceProfessional = styled.div`
-  flex: 1;
-`;
 
-export const MySkills = styled.div`
-  flex: 1;
-  border-right: 1px solid #ccc; 
-  padding-right: 20px; 
-  margin-right: 20px; 
-`;
+// export const ExperienceContainer = styled.div`  
+//   max-width  :80% ;
+// `;
 
-export const SkillsContainer = styled.div`  
-  padding-right: 20px; 
-  margin-left: 20px; 
-`;
-export const DividerExperience = styled.div`
-  height: 100%; /* Ajuste conforme a altura dos contêineres */
-  width: 1px; /* Largura da linha divisória */
-  background-color: black; /* Cor da linha divisória */
-  align-self: stretch; 
-`;
+// export const ExperienceSubtitle = styled.span`
+//   color: black;
+//   font-weight: bold;
+//   font-size: 32px;
+//   `
+// export const ExperienceProfessional = styled.div`
+//   flex: 1;
+//   margin-left: 40%;
+// `;
+
+// export const ExperienceText = styled.p`
+//   font-size: 22px;  
+//   color: black;
+// `
+
+
+// export const MySkills = styled.div`
+//   /* flex: 1; */
+  
+//   /* padding-right: 20px; 
+//   margin-right: 20px;  */
+// `;
+
+// export const SkillsContainer = styled.div`  
+//   /* padding-right: 20px; 
+//   margin-left: 20px;  */
+// `;
+
 // ---------------------------------------FIM EXPERIENCIA PROFISSIONAL-------------------------------------
 
 
