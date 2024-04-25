@@ -151,7 +151,7 @@ export const Home = () => {
             </DescriptionConteiner>
             <ButtonContainer>
             </ButtonContainer>
-          </ProfessionalSummary>
+          </ProfessionalSummary>          
           <CertificationSVG>
             <img src={CertificateSVG} alt="CertificateSVG" style={{ width: '500px', height: '600px' }} />
           </CertificationSVG>

@@ -252,6 +252,7 @@ export const Academic = styled.div`
     overflow-x: hidden;
     max-width: 100%;
     flex-direction: column;
+    
   }
 `;
 
