@@ -82,7 +82,7 @@ export const Home = () => {
           </SVGContainer>
         </ContainerIntodrodution>
       </ContainerResumo>
-
+{/* 
       <ProfissionalExperienceConteiner>
         <Profissional>
           <ProfissionalExperience>
@@ -148,7 +148,7 @@ export const Home = () => {
             <img src={CertificateSVG} alt="CertificateSVG" style={{ width: '500px', height: '600px' }} />
           </SVGContainer>
         </Academic>
-      </AcademicConteiner>
+      </AcademicConteiner> */}
     </FadeIn>
   );
 };
