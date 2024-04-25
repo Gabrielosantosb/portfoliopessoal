@@ -190,7 +190,8 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese, paym
         slideInterval={1000}
       ></ReactImageGallery>
       <SubTitle>
-      Projeto em Angular para aprimorar nosso sistema de ficha anamnese, onde integramos autenticação e preenchimento de formulários de forma eficiente. Uma das peças-chave desse projeto é a utilização da biblioteca PrimeNG.
+      Projeto em Angular para aprimorar nosso sistema de ficha anamnese, onde integramos autenticação e preenchimento de formulários de forma eficiente. Uma das peças-chave desse projeto é a utilização da biblioteca PrimeNG.<br></br>
+      Ainda em constante desenvolvimento!
       </SubTitle>
       <LinksContainer>
         <TitleLink href="https://github.com/Gabrielosantosb/Anamnese-FrontEnd">
