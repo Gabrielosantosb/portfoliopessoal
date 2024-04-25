@@ -44,6 +44,7 @@ import {
   DivisorContainer,
   InformationContainer,
   InformationText,
+  CertificationSVG,
 } from "./styles";
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
 import CertificateSVG from "../../assets/svg/certification.svg"
@@ -104,9 +105,9 @@ export const Home = () => {
             </ExperienceDescriptionConteiner>
           </ProfissionalExperience>
 
-          <DivisorContainer>
-            <DivisorImage src={DivisorPNG} alt="Divisor" />
-          </DivisorContainer>
+
+          <DivisorImage src={DivisorPNG} alt="Divisor" />
+
 
 
           <SkillsContainer>
@@ -122,14 +123,14 @@ export const Home = () => {
               </DescriptionExperience>
               <InformationContainer>
                 <InformationText>Estou sempre aberto a novos desafios e projetos
-                  desafiadores. Vamos trabalhar juntos para criar soluçõesincríveis para sua empresa!</InformationText>
+                  desafiadores. Vamos trabalhar juntos para criar soluções incríveis para sua empresa!</InformationText>
               </InformationContainer>
             </ExperienceDescriptionConteiner>
           </SkillsContainer>
         </Profissional>
       </ProfissionalExperienceConteiner>
 
-      {/*   <AcademicConteiner>
+      <AcademicConteiner>
         <Academic>
           <ProfessionalSummary>
             <MyNameContainer>
@@ -151,11 +152,11 @@ export const Home = () => {
             <ButtonContainer>
             </ButtonContainer>
           </ProfessionalSummary>
-          <SVGContainer>
+          <CertificationSVG>
             <img src={CertificateSVG} alt="CertificateSVG" style={{ width: '500px', height: '600px' }} />
-          </SVGContainer>
+          </CertificationSVG>
         </Academic>
-      </AcademicConteiner> */}
+      </AcademicConteiner>
     </FadeIn>
   );
 };

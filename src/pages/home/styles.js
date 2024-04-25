@@ -17,6 +17,19 @@ export const ContainerResumo = styled.section`
   }
 `;
 
+export const ContainerIntodrodution = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 10%;
+
+  @media screen and (max-width: 768px) {
+    /* flex-direction: row;  */
+    flex-direction: column;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+`;
 
 export const SVGContainer = styled.div`
   margin-top: auto;
@@ -25,18 +38,6 @@ export const SVGContainer = styled.div`
   @media screen and (max-width: 768px) {    
     margin-top: 0;
     margin-right: 50%;
-  }
-`;
-export const ContainerIntodrodution = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-left: 10%;
-
-  @media screen and (max-width: 768px) {
-    /* flex-direction: row;  */
-    overflow-x: hidden;
-    max-width: 100%;
   }
 `;
 
@@ -131,7 +132,7 @@ export const ProfissionalExperienceConteiner = styled.section`
 export const Profissional = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 10%;
   
   @media screen and (max-width: 768px) {
@@ -211,25 +212,46 @@ export const DivisorImage = styled.img`
   width: 100px; 
   height: auto; 
   margin: 0 auto;
+  @media screen and (max-width: 768px) {    
+   display: none;
+  }
 `;
 
 export const AcademicConteiner = styled.section`
-  background-image: url(${backgroundAcademic});
+   background-image: url(${backgroundIntroduction});
   background-size: auto auto; 
   background-repeat: no-repeat; 
-  
   @media screen and (max-width: 768px) {    
+    background-size: auto auto; 
+    background-repeat: no-repeat;    
+    max-width: 100%;
+    padding-top : 50px;
+    padding-right : 10px;
+    overflow-x: hidden;
   }
 `;
+
+export const CertificationSVG = styled.div`
+ margin-top: auto;
+  margin-right: 10%;  
+
+  @media screen and (max-width: 768px) {    
+     margin-top: 0; 
+     margin-right: 90%;
+    padding-right: 20%; 
+  }
+`
 
 export const Academic = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 10%;
-  
-  @media screen and (max-width: 768px) {
-    flex-direction: row; 
+
+  @media screen and (max-width: 768px) {    
+    overflow-x: hidden;
+    max-width: 100%;
+    flex-direction: column;
   }
 `;
 
