@@ -41,6 +41,9 @@ import {
   ExperienceDescriptionConteiner,
   DescriptionBolder,
   DivisorImage,
+  DivisorContainer,
+  InformationContainer,
+  InformationText,
 } from "./styles";
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
 import CertificateSVG from "../../assets/svg/certification.svg"
@@ -56,7 +59,7 @@ import { Header } from "../../components/header";
 export const Home = () => {
   return (
     <FadeIn>
-      <Header/>
+      <Header />
       <ContainerResumo>
         <ContainerIntodrodution>
           <ProfessionalSummary>
@@ -72,9 +75,9 @@ export const Home = () => {
               </Description>
             </DescriptionConteiner>
             <ButtonContainer>
-              
-            
-              <BasicButton title='Entrar em contato'><img src={WppButtonPNG} alt="Button"/></BasicButton>
+
+
+              <BasicButton title='Entrar em contato'><img src={WppButtonPNG} alt="Button" /></BasicButton>
             </ButtonContainer>
           </ProfessionalSummary>
           <SVGContainer>
@@ -82,7 +85,7 @@ export const Home = () => {
           </SVGContainer>
         </ContainerIntodrodution>
       </ContainerResumo>
-{/* 
+
       <ProfissionalExperienceConteiner>
         <Profissional>
           <ProfissionalExperience>
@@ -101,7 +104,9 @@ export const Home = () => {
             </ExperienceDescriptionConteiner>
           </ProfissionalExperience>
 
-          <DivisorImage src={DivisorPNG} alt="Divisor" />
+          <DivisorContainer>
+            <DivisorImage src={DivisorPNG} alt="Divisor" />
+          </DivisorContainer>
 
 
           <SkillsContainer>
@@ -115,14 +120,16 @@ export const Home = () => {
                 ● <DescriptionBolder>Adicionais:</DescriptionBolder> Git, Docker, ExpoGO, Styled-Components<br></br>
 
               </DescriptionExperience>
-              <DescriptionExperience>Estou sempre aberto a novos desafios e projetos
-                desafiadores. Vamos trabalhar juntos para criar soluçõesincríveis para sua empresa!</DescriptionExperience>
+              <InformationContainer>
+                <InformationText>Estou sempre aberto a novos desafios e projetos
+                  desafiadores. Vamos trabalhar juntos para criar soluçõesincríveis para sua empresa!</InformationText>
+              </InformationContainer>
             </ExperienceDescriptionConteiner>
           </SkillsContainer>
         </Profissional>
       </ProfissionalExperienceConteiner>
 
-      <AcademicConteiner>
+      {/*   <AcademicConteiner>
         <Academic>
           <ProfessionalSummary>
             <MyNameContainer>

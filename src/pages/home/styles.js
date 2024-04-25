@@ -123,8 +123,8 @@ export const ProfissionalExperienceConteiner = styled.section`
   background-size: auto auto; 
   background-repeat: no-repeat; 
   
-  @media (min-width: 768px) {
-    display: none; // Oculta em telas maiores que 768px
+  @media screen and (max-width: 768px) {    
+    background-size: auto 100%; 
   }
 `;
 
@@ -134,15 +134,25 @@ export const Profissional = styled.div`
   flex-direction: column;
   margin-left: 10%;
   
-  @media (min-width: 768px) {
-    flex-direction: row; 
+  @media screen and (max-width: 768px) {
+    flex-direction: column; 
   }
 `;
+
+export const DivisorContainer = styled.div`
+@media screen and (max-width: 768px) {    
+   display: none;
+  }
+
+`
 
 export const ExperienceTitle = styled.h2`
   color: black;
   font-size: 42px;
   margin-bottom: 10px; 
+  @media screen and (max-width: 768px) {    
+   text-align: center;
+  }
 `;
 
 export const ExperienceSubtitle = styled.p`
@@ -150,11 +160,36 @@ export const ExperienceSubtitle = styled.p`
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px; 
+  @media screen and (max-width: 768px) {    
+   text-align: center;
+   margin-bottom: 30px; 
+  }
 `;
 
 export const ExperienceDescriptionConteiner = styled.div`
   max-width: 620px;    
   margin-bottom: 30px;
+`;
+
+export const InformationContainer = styled.div`
+  margin-top: 20px;
+`
+export const InformationText = styled.p`
+  font-size: 24px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
 `;
 
 export const ProfissionalExperience = styled.div`
@@ -183,8 +218,7 @@ export const AcademicConteiner = styled.section`
   background-size: auto auto; 
   background-repeat: no-repeat; 
   
-  @media (min-width: 768px) {
-    display: none; // Oculta em telas maiores que 768px
+  @media screen and (max-width: 768px) {    
   }
 `;
 
@@ -194,7 +228,7 @@ export const Academic = styled.div`
   flex-direction: column;
   margin-left: 10%;
   
-  @media (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     flex-direction: row; 
   }
 `;
