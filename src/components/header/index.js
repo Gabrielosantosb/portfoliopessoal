@@ -5,6 +5,7 @@ import {
   ProjectsButtonsContainer,
   SingleButtonContainer,
   ButtonsHeader,
+  IconsContainer,
 } from "./styles";
 import { BasicButton } from "../basicButton";
 import { FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa";
@@ -21,24 +22,22 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
         <ButtonsHeader to="/meus-projetos" onClick={() => setVisibleButton(true)}>
           Projetos
         </ButtonsHeader>
-
-        {/* Adicionando os ícones de e-mail, WhatsApp e GitHub alinhados à direita */}
-        <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: "20px" }}>
-          <a href="mailto:gabrielosantosb@gmail.com" style={{ color: "white" }}>
-            <FaEnvelope size={28} />
-          </a>
-          <a href="https://wa.me/61982420900" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
-            <FaWhatsapp size={28} />
-          </a>
-          <a href="https://github.com/Gabrielosantosb" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
-            <FaGithub size={28} />
-          </a>
-        </div>
       </Container>
 
+      <IconsContainer>
+        <a href="mailto:gabrielosantosb@gmail.com" style={{ color: "white" }}>
+          <FaEnvelope size={28} />
+        </a>
+        <a href="https://wa.me/61982420900" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+          <FaWhatsapp size={28} />
+        </a>
+        <a href="https://github.com/Gabrielosantosb" target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
+          <FaGithub size={28} />
+        </a>
+      </IconsContainer>
+
       {visibleButton && (
-        <>
-         <ProjectsButtonsContainer>
+        <ProjectsButtonsContainer>
           <SingleButtonContainer>
             <BasicButton title={"Angular"} to="/meus-projetos-angular" />
           </SingleButtonContainer>
@@ -52,7 +51,6 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
             <BasicButton title={"Acadêmicos"} to="/meus-projetos-academico" />
           </SingleButtonContainer>
         </ProjectsButtonsContainer>
-        </>
       )}
     </HeaderContainer>
   );

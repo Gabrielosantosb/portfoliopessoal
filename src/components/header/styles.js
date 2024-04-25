@@ -16,6 +16,14 @@ export const HeaderContainer = styled.section`
     /* align-items: stretch; */
   }
 `;
+export const IconsContainer = styled.div`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 20px;
+  margin-right: 30px;
+`;
 export const Container = styled.div`
   display: flex;
   align-items: center;
