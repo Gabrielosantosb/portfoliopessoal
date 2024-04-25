@@ -1,11 +1,10 @@
 import styled from "styled-components";
+import backgroundFooter from '../../imgs/background/background5.png';
 
 export const FooterContainer = styled.footer`
-  background: linear-gradient(
-    0deg,
-    rgba(171, 168, 168, 1) 100%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background-image: url(${backgroundFooter});
+  background-size: 100% auto; 
+  background-repeat: no-repeat;   
   padding: 20px 0;
   text-align: center;
 `;
