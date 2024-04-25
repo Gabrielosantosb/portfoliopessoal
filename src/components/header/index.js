@@ -18,16 +18,37 @@ import { ThemeToggle, ThemeToggleContainer } from "../../styles/global";
 import { FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
-  const [visibleButton, setVisibleButton] = useState(false);
+  const [visibleButton, setVisibleButton] = useState(true);
   return (
+
+
     <HeaderContainer>
 
-    <Container>
-      <ButtonsHeader>Home</ButtonsHeader>
-      <ButtonsHeader>Projetos</ButtonsHeader>
-    </Container>
+      <Container>
+        <ButtonsHeader to="/home">Home</ButtonsHeader>
+        <ButtonsHeader to="/meus-projetos">Projetos</ButtonsHeader>
+      </Container>
+      {visibleButton && (
+        <ProjectsButtonsContainer>           
+        <SingleButtonContainer>
+          <BasicButton title={"Angular"} to="/meus-projetos-angular" />
+        </SingleButtonContainer>
+        <SingleButtonContainer>
+          <BasicButton title={"React"} to="/meus-projetos-react" />
+        </SingleButtonContainer>
+        <SingleButtonContainer>
+          <BasicButton title={"Back-End"} to="/meus-projetos-back" />
+        </SingleButtonContainer>
+        <SingleButtonContainer>
+          <BasicButton title={"Academicos"} to="/meus-projetos-academico" />
+        </SingleButtonContainer>
+      </ProjectsButtonsContainer>
+    )}
     </HeaderContainer>
+    
 
+
+        
     // <>
 
     //   <Container>
@@ -65,28 +86,28 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
     //         onPress={() => setVisibleButton(false)}
     //       />
 
-    //       <BasicButton
-    //         title={"Meus Projetos"}
-    //         to="/meus-projetos"
-    //         onPress={() => setVisibleButton(true)}
-    //       />
+    // <BasicButton
+    //   title={"Meus Projetos"}
+    //   to="/meus-projetos"
+    //   onPress={() => setVisibleButton(true)}
+    // />
     //     </ButtonsContainer>
-    //     {visibleButton && (
-    //       <ProjectsButtonsContainer>           
-    //         <SingleButtonContainer>
-    //           <BasicButton title={"Angular"} to="/meus-projetos-angular" />
-    //         </SingleButtonContainer>
-    //         <SingleButtonContainer>
-    //           <BasicButton title={"React"} to="/meus-projetos-react" />
-    //         </SingleButtonContainer>
-    //         <SingleButtonContainer>
-    //           <BasicButton title={"Back-End"} to="/meus-projetos-back" />
-    //         </SingleButtonContainer>
-    //         <SingleButtonContainer>
-    //           <BasicButton title={"Academicos"} to="/meus-projetos-academico" />
-    //         </SingleButtonContainer>
-    //       </ProjectsButtonsContainer>
-    //     )}
+        // {visibleButton && (
+        //   <ProjectsButtonsContainer>           
+        //     <SingleButtonContainer>
+        //       <BasicButton title={"Angular"} to="/meus-projetos-angular" />
+        //     </SingleButtonContainer>
+        //     <SingleButtonContainer>
+        //       <BasicButton title={"React"} to="/meus-projetos-react" />
+        //     </SingleButtonContainer>
+        //     <SingleButtonContainer>
+        //       <BasicButton title={"Back-End"} to="/meus-projetos-back" />
+        //     </SingleButtonContainer>
+        //     <SingleButtonContainer>
+        //       <BasicButton title={"Academicos"} to="/meus-projetos-academico" />
+        //     </SingleButtonContainer>
+        //   </ProjectsButtonsContainer>
+        // )}
     //   </Container>
     //   <Divider />
     // </>

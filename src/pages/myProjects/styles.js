@@ -8,9 +8,9 @@ export const PageContainer = styled.div`
   /* height: 100vh; */
 `;
 
-export const HeaderContainer = styled.div`
-  /* background-color: #3498db; */
+export const HeaderContainer = styled.div`  
   padding: 20px;
+  margin-top: 10%;
   width: 100%;
   text-align: center;
 `;
@@ -19,6 +19,7 @@ export const ProjectTitle = styled.h1`
   text-align: center;
   font-size: 32px; 
   margin-bottom: 10px;
+  color: white;
   
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
 `;
@@ -26,7 +27,9 @@ export const ProjectsContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 40px;  
+  background: linear-gradient(to bottom, #150a0a, #2E0909);
+
 `;
 
 export const ProjectCard = styled.div`
@@ -36,7 +39,7 @@ export const ProjectCard = styled.div`
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 20px;
-  width: 80%;
+  width: 90%;
 `;
 
 export const Title = styled.p`

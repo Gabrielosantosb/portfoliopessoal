@@ -8,8 +8,9 @@ export const ProjectsContainer = styled.section`
 `;
 
 export const ProjectCard = styled.div`
-  background-color: ${(props) => props.theme.cardBackground};
-  color: ${(props) => props.theme.cardTextColor};
+  /* background-color: ${(props) => props.theme.cardBackground}; */
+  background-color: #F2F2F2;
+  color: ${(props) => props.theme.cardTextColor};  
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 
@@ -5,10 +6,14 @@ export const HeaderContainer = styled.section`
   margin-top: 20px;
   position: absolute;  
   top: 0; 
-
   width: 100%; 
   display: flex;
   justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
+  margin-bottom: 30%;
+
+
 `;
 
 export const Container = styled.div`
@@ -16,7 +21,7 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const ButtonsHeader = styled.button`
+export const ButtonsHeader = styled(Link)`
   margin: 0 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -26,18 +31,13 @@ export const ButtonsHeader = styled.button`
   color: white; 
   font-weight: bold; 
   font-size: 24px;
+  text-decoration: none;
+  
   transition: transform 0.3s ease; 
   &:hover {
     transform: scale(1.1); /* Aumenta em 10% */
   }
 `;
-// export const HeaderContainer = styled.header`
-// position: absolute;
-//   display: flex;
-//   align-items: center; 
-//   padding: 20px;
-//   background: ${(props) => props.theme.headerBackground};
-// `;
 
 
 
