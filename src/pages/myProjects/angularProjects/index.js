@@ -6,20 +6,20 @@ import { Header } from "../../../components/header";
 
 export const AngularPage = () => {
   return (
-    <>
-      {/* <FadeIn> */}
-        <Header />
-        <ProjectsContainer>
-          <HeaderContainer>
-            <ProjectTitle>Projetos Angular</ProjectTitle>
-          </HeaderContainer>
-          <GalleryAngularImages anamnese />
-          <GalleryAngularImages paymentSimulation />
-          <GalleryAngularImages stock />
-          <GalleryAngularImages todo />
-          <GalleryAngularImages crud />
-        </ProjectsContainer>
-      {/* </FadeIn> */}
-    </>
+    
+      <ProjectsContainer>
+        <HeaderContainer>
+          <ProjectTitle>Projetos Angular</ProjectTitle>
+        </HeaderContainer>
+
+        <GalleryAngularImages anamnese />
+        <GalleryAngularImages paymentSimulation />
+        <GalleryAngularImages stock />
+        <GalleryAngularImages todo />
+        <GalleryAngularImages crud />
+
+      </ProjectsContainer>
+    
+
   );
 };

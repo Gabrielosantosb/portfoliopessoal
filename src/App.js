@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { ThemeProvider } from "styled-components";
-import {  
+import {
   GlobalStyles,
   darkTheme,
   lightTheme,
@@ -18,6 +18,7 @@ import { AngularPage } from "./pages/myProjects/angularProjects";
 import { ReactPage } from "./pages/myProjects/reactProjects";
 import { BackEndPage } from "./pages/myProjects/backProjects";
 import { AcademicPage } from "./pages/myProjects/academicProjects";
+import { FadeIn } from "./components/fadeIn";
 
 function App() {
   // const Stack = createStackNavigator();
@@ -26,21 +27,21 @@ function App() {
     setDarkMode(!isDarkMode);
   };
   return (
-    <Router>
-      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>              
-          {/* <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} /> */}
-          <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/meus-projetos" element={<AngularPage />} />
-            <Route path="/meus-projetos-angular" element={<AngularPage />} />
-            <Route path="/meus-projetos-react" element={<ReactPage />} />
-            <Route path="/meus-projetos-back" element={<BackEndPage />} />
-            <Route path="/meus-projetos-academico" element={<AcademicPage />} />
-          </Routes>
-          {/* <Footer /> */}
-      </ThemeProvider>
-    </Router>
+    <div>
+      <Router>
+      <Header />
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/meus-projetos" element={<AngularPage />} />
+          <Route path="/meus-projetos-angular" element={<AngularPage />} />
+          <Route path="/meus-projetos-react" element={<ReactPage />} />
+          <Route path="/meus-projetos-back" element={<BackEndPage />} />
+          <Route path="/meus-projetos-academico" element={<AcademicPage />} />
+        </Routes>
+        {/* <Footer /> */}
+      </Router>
+    </div>
   );
 }
 export default App;

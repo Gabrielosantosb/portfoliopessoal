@@ -59,8 +59,7 @@ import { Header } from "../../components/header";
 
 export const Home = () => {
   return (
-    <FadeIn>
-      <Header />
+    <>    
       <ContainerResumo>
         <ContainerIntodrodution>
           <ProfessionalSummary>
@@ -156,7 +155,7 @@ export const Home = () => {
             <img src={CertificateSVG} alt="CertificateSVG" style={{ width: '500px', height: '600px' }} />
           </CertificationSVG>
         </Academic>
-      </AcademicConteiner>
-    </FadeIn>
+      </AcademicConteiner>    
+      </>
   );
 };

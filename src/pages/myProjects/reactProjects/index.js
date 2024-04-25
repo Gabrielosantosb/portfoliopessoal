@@ -6,8 +6,7 @@ import { Header } from "../../../components/header";
 export const ReactPage = () => {
   return (
     <>
-      {/* <FadeIn> */}
-        <Header />
+            
         <ProjectsContainer>
           <HeaderContainer>
             <ProjectTitle>Projetos React</ProjectTitle>
@@ -16,7 +15,7 @@ export const ReactPage = () => {
           <GalleryReactImages hanoi />
           <GalleryReactImages organo />
         </ProjectsContainer>
-      {/* </FadeIn> */}
+      
     </>
   );
 };

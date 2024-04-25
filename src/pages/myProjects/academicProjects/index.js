@@ -6,8 +6,7 @@ import { Header } from "../../../components/header";
 export const AcademicPage = () => {
   return (
     <>
-      {/* <FadeIn> */}
-        <Header />
+      {/* <FadeIn> */}        
         <ProjectsContainer>
           <HeaderContainer>
             <ProjectTitle>Projetos Acadêmicos</ProjectTitle>

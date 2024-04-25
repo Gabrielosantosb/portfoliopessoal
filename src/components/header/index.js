@@ -21,12 +21,10 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
   const [visibleButton, setVisibleButton] = useState(true);
   return (
 
-
     <HeaderContainer>
-
-      <Container>
-        <ButtonsHeader to="/home">Home</ButtonsHeader>
-        <ButtonsHeader to="/meus-projetos">Projetos</ButtonsHeader>
+      <Container>    
+        <ButtonsHeader to="/home" onClick={() => setVisibleButton(false)}>Home</ButtonsHeader>
+        <ButtonsHeader to="/meus-projetos" onClick={() => setVisibleButton(true)}>Projetos</ButtonsHeader>
       </Container>
       {visibleButton && (
         <ProjectsButtonsContainer>           
@@ -40,7 +38,7 @@ export const Header = ({ toggleDarkMode, isDarkMode }) => {
           <BasicButton title={"Back-End"} to="/meus-projetos-back" />
         </SingleButtonContainer>
         <SingleButtonContainer>
-          <BasicButton title={"Academicos"} to="/meus-projetos-academico" />
+          <BasicButton title={"Acadêmicos"} to="/meus-projetos-academico" />
         </SingleButtonContainer>
       </ProjectsButtonsContainer>
     )}

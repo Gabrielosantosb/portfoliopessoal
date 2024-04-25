@@ -7,7 +7,7 @@ export const BackEndPage = () => {
   return (
     // <FadeIn>
     <>
-      <Header />
+      {/* <Header /> */}
       <ProjectsContainer>
         <HeaderContainer>
           <ProjectTitle>Projetos Back-End</ProjectTitle>
