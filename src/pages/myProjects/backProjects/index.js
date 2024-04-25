@@ -5,19 +5,20 @@ import { FadeIn } from "../../../components/fadeIn";
 import { Header } from "../../../components/header";
 export const BackEndPage = () => {
   return (
-    // <FadeIn>
-    <>
-      {/* <Header /> */}
-      <ProjectsContainer>
-        <HeaderContainer>
-          <ProjectTitle>Projetos Back-End</ProjectTitle>
-        </HeaderContainer>
-        <GalleryBackEnd anamneseAPI />
-        <GalleryBackEnd lojaAPI />
-        <GalleryBackEnd catalogAPI />
-        <GalleryBackEnd crudAPI />
-      </ProjectsContainer>
-    </>
+    // <FadeIn>    
+      <>
+        {/* <Header /> */}
+        <ProjectsContainer>
+          <HeaderContainer>
+            <ProjectTitle>Projetos Back-End</ProjectTitle>
+          </HeaderContainer>
+
+          <GalleryBackEnd anamneseAPI />
+          <GalleryBackEnd lojaAPI />
+          <GalleryBackEnd catalogAPI />
+          <GalleryBackEnd crudAPI />
+        </ProjectsContainer>
+      </>    
     // </FadeIn>
   );
 };

@@ -26,7 +26,7 @@ export const IconsContainer = styled.div`
 `;
 export const Container = styled.div`
   display: flex;
-  align-items: center;
+  align-items: center;  
 `;
 
 export const ButtonsHeader = styled(Link)`
@@ -38,7 +38,7 @@ export const ButtonsHeader = styled(Link)`
   border: none;
   color: white; 
   font-weight: bold; 
-  font-size: 24px;
+  font-size: 28px;
   text-decoration: none;  
   transition: transform 0.3s ease; 
   &:hover {

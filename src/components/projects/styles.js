@@ -44,15 +44,18 @@ export const TitleLink = styled.a`
   margin: 10px;
   font-size: 24px; 
   background-color: ${(props) => props.theme.linkBgColor};
-  color: ${(props) => props.theme.linkTextColor};
+  /* color: ${(props) => props.theme.linkTextColor}; */
+  color: #EF3A5D;
   border-radius: 8px; 
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, border-color 0.3s; 
+  border: 2px solid ${(props) => props.theme.linkBorderColor}; /* Adicionando a borda */
 
   :hover {
     background-color: ${(props) => props.theme.linkHoverBgColor};
     color: ${(props) => props.theme.linkHoverTextColor};
     transform: scale(1.05); 
+    border-color: ${(props) => props.theme.linkHoverBorderColor}; /* Mudando a cor da borda no hover */
   }
 `;
 

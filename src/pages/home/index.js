@@ -21,15 +21,7 @@ import {
   ButtonContainer,
   ProfissionalExperienceConteiner,
   ProfissionalExperience,
-  ExerienceText,
-  Divisor,
-  Divider,
-  MySkills,
-  ExperienceText,
-  ExperienceProfessional,
-  SkillsContainer,
-  ExperienceContainer,
-  DividerExperience,
+  SkillsContainer,  
   ExperienceSubtitle,
   ExperienceTitle,
   ContainerResumo,
@@ -45,19 +37,20 @@ import {
   InformationContainer,
   InformationText,
   CertificationSVG,
+  WppButton,
 } from "./styles";
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
 import CertificateSVG from "../../assets/svg/certification.svg"
 import DivisorPNG from "../../imgs/background/Divisor.png"
 import WppButtonPNG from "../../imgs/background/buttonWpp.png"
-import { FadeIn } from "../../components/fadeIn";
-import { FaEnvelope, FaLaptop, FaTools, FaBook } from "react-icons/fa";
-import { BasicButton } from "../../components/basicButton";
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
-import { Header } from "../../components/header";
 
 
 export const Home = () => {
+
+  const handleWppButtonClick = () => {
+    window.open("https://wa.me/61982420900", "_blank");
+  };
+
   return (
     <>    
       <ContainerResumo>
@@ -74,11 +67,13 @@ export const Home = () => {
                 Sou um <DescriptionRed>Desenvolvedor</DescriptionRed> com experiência em integração e programação, especializado em <DescriptionRed>React Native</DescriptionRed>, <DescriptionRed>Angular</DescriptionRed> e <DescriptionRed>.NET</DescriptionRed>, estou atualmente aprimorando meus conhecimentos como estudante de Ciências da Computação. Estou sempre aberto a novas oportunidades e desafios.
               </Description>
             </DescriptionConteiner>
-            <ButtonContainer>
-
-
-              <BasicButton title='Entrar em contato'><img src={WppButtonPNG} alt="Button" /></BasicButton>
-            </ButtonContainer>
+            
+            <WppButton
+            src={WppButtonPNG}
+            alt="Button"
+            onClick={handleWppButtonClick}
+          />
+            
           </ProfessionalSummary>
           <SVGContainer>
             <img src={DeveloperSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />

@@ -84,6 +84,9 @@ export const Title = styled.h2`
 export const DescriptionConteiner = styled.div`
   max-width: 800px;    
 `;
+export const WppButton = styled.img`
+  cursor: pointer;
+`;
 
 export const Description = styled.p`
   font-size: 22px;
@@ -105,8 +108,9 @@ export const DescriptionBolder = styled.span`
 `;
 
 
-export const ButtonContainer = styled.div`
-  margin-top: 30px;
+export const ButtonContainer = styled.div`  
+  cursor: pointer;
+  background-color: aqua;
 `;
 
 export const CommonContainer = styled.div`
