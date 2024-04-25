@@ -13,6 +13,9 @@ export const HeaderContainer = styled.div`
   margin-top: 10%;
   width: 100%;
   text-align: center;
+  @media screen and (max-width: 768px) {
+   margin-top: 60%;
+  }
 `;
 
 export const ProjectTitle = styled.h1`
