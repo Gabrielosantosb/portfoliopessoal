@@ -5,7 +5,7 @@ import backgroundAcademic from '../../imgs/background/background3.png';
 
 export const ContainerResumo = styled.section`
   background-image: url(${backgroundIntroduction});
-  background-size: auto auto; 
+  background-size: 100% auto; 
   background-repeat: no-repeat; 
   @media screen and (max-width: 768px) {    
     background-size: auto auto; 
@@ -121,7 +121,7 @@ export const CommonContainer = styled.div`
 
 export const ProfissionalExperienceConteiner = styled.section`  
   background-image: url(${backgroundExperience});    
-  background-size: auto auto; 
+  background-size: 100% auto; 
   background-repeat: no-repeat; 
   
   @media screen and (max-width: 768px) {    
@@ -219,7 +219,7 @@ export const DivisorImage = styled.img`
 
 export const AcademicConteiner = styled.section`
    background-image: url(${backgroundIntroduction});
-  background-size: auto auto; 
+  background-size: 100% auto; 
   background-repeat: no-repeat; 
   @media screen and (max-width: 768px) {    
     background-size: auto auto; 
