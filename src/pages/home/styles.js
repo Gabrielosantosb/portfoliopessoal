@@ -5,7 +5,8 @@ import backgroundAcademic from '../../imgs/background/background3.png';
 
 export const ContainerResumo = styled.section`
   background-image: url(${backgroundIntroduction});
-  background-size: 100% auto; 
+  /* background-size: 100% auto;  */
+  background-size: cover; 
   background-repeat: no-repeat; 
   @media screen and (max-width: 768px) {    
     background-size: auto auto; 
@@ -169,8 +170,8 @@ export const CommonContainer = styled.div`
 `;
 
 export const ProfissionalExperienceConteiner = styled.section`  
-  background-image: url(${backgroundExperience});    
-  background-size: 100% auto; 
+  background-image: url(${backgroundExperience});      
+  background-size: cover; /* Cobrir toda a área da seção */
   background-repeat: no-repeat; 
   
   @media screen and (max-width: 768px) {    
@@ -259,8 +260,8 @@ export const SkillsContainer = styled.div`
 
 export const DivisorImage = styled.img`
   width: 100px; 
-  height: auto; 
-  margin: 0 auto;
+  height: auto auto; 
+  margin: auto 5px;
   @media screen and (max-width: 768px) {    
    display: none;
   }
@@ -268,7 +269,8 @@ export const DivisorImage = styled.img`
 
 export const AcademicConteiner = styled.section`
    background-image: url(${backgroundIntroduction});
-  background-size: 100% auto; 
+  /* background-size: 100% auto;  */
+  background-size: cover; 
   background-repeat: no-repeat; 
   @media screen and (max-width: 768px) {    
     background-size: auto auto; 

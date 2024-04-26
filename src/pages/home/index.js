@@ -70,12 +70,9 @@ export const Home = () => {
               Sou um <DescriptionRed>Desenvolvedor</DescriptionRed> com experiência em integração e programação. Minhas habilidades se destacam principalmente em <DescriptionRed>React Native</DescriptionRed>, <DescriptionRed>Angular</DescriptionRed> e <DescriptionRed>.NET</DescriptionRed>. Atualmente, estou aprimorando meus conhecimentos como estudante de Ciências da Computação. Estou sempre aberto a novas oportunidades e desafios.
               </Description>
             </DescriptionConteiner>
-
             <WhatsAppButtonConteiner>
               <WhatsAppButton onClick={handleWppButtonClick}>Entre em contato <FaWhatsapp className="whatsapp-icon" /></WhatsAppButton>
             </WhatsAppButtonConteiner>
-
-
           </ProfessionalSummary>
           <SVGContainer>
             <img src={DeveloperSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />
