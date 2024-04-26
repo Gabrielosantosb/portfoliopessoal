@@ -137,12 +137,13 @@ export const Home = () => {
             </MyNameContainer>
             <DescriptionConteiner>
               <Description>
-                - Bacharelado em Ciências da Computação - 5º semestre Universidade de Brasília (CEUB)<br></br>
-                - Curso React - OrigamidFormação Angular(v2+) - LoianeTrainig<br></br>
-                - Formação Angular 2024 - Udemy<br></br>
-                - Curso Web API ASP .NET Core Essencial (.NET 8) -Udemy<br></br>
-                - Arquitetura de Microsserviços com ASP.NET, .(NET 6)-Udemy<br></br>
-                - Desenvolvimento WEB - Udemy<br></br>
+                - Bacharelado em <DescriptionRed>Ciências da Computação</DescriptionRed> - 5º semestre Universidade de Brasília (CEUB)<br></br>
+                - Curso <DescriptionRed>React</DescriptionRed> - Origamid<br></br> 
+                 - Formação Angular(v2+) - LoianeTrainig<br></br>
+                - Formação <DescriptionRed>Angular</DescriptionRed> 2024 - Udemy<br></br>
+                - Curso Web API <DescriptionRed>ASP .NET</DescriptionRed> Core Essencial (.NET 8) -Udemy<br></br>
+                - Arquitetura de Microsserviços com <DescriptionRed>ASP.NET</DescriptionRed>, .(NET 6)-Udemy<br></br>
+                - Desenvolvimento <DescriptionRed>WEB</DescriptionRed> - Udemy<br></br>
               </Description>
             </DescriptionConteiner>
             <ButtonContainer>
