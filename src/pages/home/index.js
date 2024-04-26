@@ -67,7 +67,7 @@ export const Home = () => {
             </MyNameContainer>
             <DescriptionConteiner>
               <Description>
-                Sou um <DescriptionRed>Desenvolvedor</DescriptionRed> com experiência em integração e programação, especializado em <DescriptionRed>React Native</DescriptionRed>, <DescriptionRed>Angular</DescriptionRed> e <DescriptionRed>.NET</DescriptionRed>, estou atualmente aprimorando meus conhecimentos como estudante de Ciências da Computação. Estou sempre aberto a novas oportunidades e desafios.
+              Sou um <DescriptionRed>Desenvolvedor</DescriptionRed> com experiência em integração e programação. Minhas habilidades se destacam principalmente em <DescriptionRed>React Native</DescriptionRed>, <DescriptionRed>Angular</DescriptionRed> e <DescriptionRed>.NET</DescriptionRed>. Atualmente, estou aprimorando meus conhecimentos como estudante de Ciências da Computação. Estou sempre aberto a novas oportunidades e desafios.
               </Description>
             </DescriptionConteiner>
 
