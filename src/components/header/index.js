@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   HeaderContainer,
   Container,
@@ -12,6 +12,17 @@ import { FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
   const [visibleButton, setVisibleButton] = useState(false);
+  useEffect(() => {
+    if (window.location.pathname === "/meus-projetos"
+      || window.location.pathname === "/meus-projetos-react"
+      || window.location.pathname === "/meus-projetos-back"
+      || window.location.pathname === "/meus-projetos-academico") {
+      setVisibleButton(true)
+    }
+    else {
+      setVisibleButton(false)
+    }
+  }, [])
 
   return (
     <HeaderContainer>
