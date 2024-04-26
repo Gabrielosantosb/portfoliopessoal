@@ -23,6 +23,11 @@ export const IconsContainer = styled.div`
   display: flex;
   gap: 20px;
   margin-right: 30px;
+  @media screen and (max-width: 768px) {
+    position: static; 
+    margin: 5px 0;
+  }
+
 `;
 export const Container = styled.div`
   display: flex;

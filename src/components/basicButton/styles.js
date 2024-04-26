@@ -18,7 +18,6 @@ export const CustomButton = styled(Link)`
     color: white;
   }
   @media (max-width: 600px) {
-    margin-top: 10px;
-    background-color: ${(props) => (props.selected ? "#e74c3c" : "#3498db")};
+    margin-top: 10px;    
   }
 `;

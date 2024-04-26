@@ -32,6 +32,12 @@ export const ProjectsContainer = styled.section`
   align-items: center;
   padding-top: 40px;  
   background: linear-gradient(to bottom, #150a0a, #2E0909);
+  @media screen and (max-width: 768px) {
+    padding-top: 25%;  
+
+
+
+  }
 
 `;
 
