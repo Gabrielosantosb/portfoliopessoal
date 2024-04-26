@@ -11,7 +11,7 @@ import { BasicButton } from "../basicButton";
 import { FaEnvelope, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export const Header = ({ toggleDarkMode, isDarkMode }) => {
-  const [visibleButton, setVisibleButton] = useState(true);
+  const [visibleButton, setVisibleButton] = useState(false);
 
   return (
     <HeaderContainer>

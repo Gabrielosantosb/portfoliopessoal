@@ -21,7 +21,7 @@ import {
   ButtonContainer,
   ProfissionalExperienceConteiner,
   ProfissionalExperience,
-  SkillsContainer,  
+  SkillsContainer,
   ExperienceSubtitle,
   ExperienceTitle,
   ContainerResumo,
@@ -38,11 +38,14 @@ import {
   InformationText,
   CertificationSVG,
   WppButton,
+  WhatsAppButton,
+  WhatsAppButtonConteiner,
 } from "./styles";
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
 import CertificateSVG from "../../assets/svg/certification.svg"
 import DivisorPNG from "../../imgs/background/Divisor.png"
 import WppButtonPNG from "../../imgs/background/buttonWpp.png"
+import { FaWhatsapp } from "react-icons/fa";
 
 
 export const Home = () => {
@@ -52,7 +55,7 @@ export const Home = () => {
   };
 
   return (
-    <>    
+    <>
       <ContainerResumo>
         <ContainerIntodrodution>
           <ProfessionalSummary>
@@ -67,13 +70,12 @@ export const Home = () => {
                 Sou um <DescriptionRed>Desenvolvedor</DescriptionRed> com experiência em integração e programação, especializado em <DescriptionRed>React Native</DescriptionRed>, <DescriptionRed>Angular</DescriptionRed> e <DescriptionRed>.NET</DescriptionRed>, estou atualmente aprimorando meus conhecimentos como estudante de Ciências da Computação. Estou sempre aberto a novas oportunidades e desafios.
               </Description>
             </DescriptionConteiner>
-            
-            <WppButton
-            src={WppButtonPNG}
-            alt="Button"
-            onClick={handleWppButtonClick}
-          />
-            
+
+            <WhatsAppButtonConteiner>
+              <WhatsAppButton onClick={handleWppButtonClick}>Entre em contato <FaWhatsapp className="whatsapp-icon" /></WhatsAppButton>
+            </WhatsAppButtonConteiner>
+
+
           </ProfessionalSummary>
           <SVGContainer>
             <img src={DeveloperSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />
@@ -145,12 +147,12 @@ export const Home = () => {
             </DescriptionConteiner>
             <ButtonContainer>
             </ButtonContainer>
-          </ProfessionalSummary>          
+          </ProfessionalSummary>
           <CertificationSVG>
             <img src={CertificateSVG} alt="CertificateSVG" style={{ width: '500px', height: '600px' }} />
           </CertificationSVG>
         </Academic>
-      </AcademicConteiner>    
-      </>
+      </AcademicConteiner>
+    </>
   );
 };

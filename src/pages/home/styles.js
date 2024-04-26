@@ -86,7 +86,52 @@ export const DescriptionConteiner = styled.div`
 `;
 export const WppButton = styled.img`
   cursor: pointer;
+  background-color: aqua;
 `;
+export const WhatsAppButtonConteiner = styled.div`
+  margin-top: 20px;
+
+`
+export const WhatsAppButton = styled.button`
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #ff3532, #ff8d4c);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 45px;
+  color: white;
+  font-size: 22px;
+  font-weight: lighter;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  transition: all 0.6s ease; /* Adiciona a transição suave */
+  
+  .whatsapp-icon {
+    font-size: 26px;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff8d4c, #ff3532);
+    opacity: 0;
+    transition: opacity 0.6s ease; 
+  }
+  
+  &:hover {
+    opacity: 1;
+    color: black
+  }
+`;
+
 
 export const Description = styled.p`
   font-size: 22px;
