@@ -14,7 +14,7 @@ export const HeaderContainer = styled.div`
   width: 100%;
   text-align: center;
   @media screen and (max-width: 768px) {
-   margin-top: 60%;
+   margin-top: 80%;
   }
 `;
 
@@ -32,8 +32,8 @@ export const ProjectsContainer = styled.section`
   align-items: center;
   padding-top: 40px;  
   background: linear-gradient(to bottom, #150a0a, #2E0909);
-  @media screen and (max-width: 768px) {
-    padding-top: 35%;  
+  @media screen and (max-width: 580px) {
+    padding-top: 65%;  
 
 
 

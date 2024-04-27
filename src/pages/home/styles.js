@@ -62,6 +62,10 @@ export const TitleIntrodution = styled.p`
 export const MyNameContainer = styled.div`
   display: flex;
   flex-direction: column;
+    @media screen and (max-width: 768px) {
+   
+   padding-top: 40px;
+  }
 `;
 
 export const TitleName = styled.h2`
