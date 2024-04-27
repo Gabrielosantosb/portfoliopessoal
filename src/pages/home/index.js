@@ -40,6 +40,7 @@ import {
   WppButton,
   WhatsAppButton,
   WhatsAppButtonConteiner,
+  ImgSVG,
 } from "./styles";
 import DeveloperSVG from "../../assets/svg/developerImg.svg"
 import CertificateSVG from "../../assets/svg/certification.svg"
@@ -75,7 +76,7 @@ export const Home = () => {
             </WhatsAppButtonConteiner>
           </ProfessionalSummary>
           <SVGContainer>
-            <img src={DeveloperSVG} alt="DeveloperSVG" style={{ width: '500px', height: '600px' }} />
+            <ImgSVG src={DeveloperSVG} alt="DeveloperSVG"/>            
           </SVGContainer>
         </ContainerIntodrodution>
       </ContainerResumo>
@@ -147,7 +148,7 @@ export const Home = () => {
             </ButtonContainer>
           </ProfessionalSummary>
           <CertificationSVG>
-            <img src={CertificateSVG} alt="CertificateSVG" style={{ width: '500px', height: '600px' }} />
+          <ImgSVG src={CertificateSVG} alt="CertificateSVG"/>            
           </CertificationSVG>
         </Academic>
       </AcademicConteiner>

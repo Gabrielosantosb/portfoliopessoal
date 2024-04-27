@@ -31,15 +31,23 @@ export const ContainerIntodrodution = styled.div`
     max-width: 100%;
   }
 `;
+export const ImgSVG = styled.img`
+width: 500px;
+height: 600px;
+@media (max-width: 768px) {
+  width: 300px;
+  height: 400px;
+  }
 
+`
 export const SVGContainer = styled.div`
-  margin-top: auto;
+  /* margin-top: auto;
   margin-right: 10%;
   
   @media screen and (max-width: 768px) {    
     margin-top: 0;
     margin-right: 50%;
-  }
+  } */
 `;
 
 export const ProfessionalSummary = styled.div`
@@ -287,14 +295,14 @@ export const AcademicConteiner = styled.section`
 `;
 
 export const CertificationSVG = styled.div`
- margin-top: auto;
+ /* margin-top: auto;
   margin-right: 10%;  
 
   @media screen and (max-width: 768px) {    
      margin-top: 0; 
      margin-right: 90%;
     padding-right: 20%; 
-  }
+  } */
 `
 
 export const Academic = styled.div`
