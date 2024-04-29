@@ -9,7 +9,7 @@ export const PageContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`  
-  padding: 20px;
+  /* padding: 20px; */
   margin-top: 10%;
   width: 100%;
   text-align: center;
