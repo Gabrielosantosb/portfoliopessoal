@@ -41,14 +41,14 @@ export const GalleryBackEnd = ({ lojaAPI, crudAPI, catalogAPI, anamneseAPI }) =>
   if (anamneseAPI)
   return (
     <ProjectCard>
-      <Title>Anamnese API</Title>
+      <Title>Anamnese/Encaminhamento médico API</Title>
       <ReactImageGallery
         items={anamneseAPIImages}
         showPlayButton={false}
         slideInterval={1000}
       ></ReactImageGallery>
       <SubTitle>
-      Back-end para o projeto Anamnese, utilizando .NET 5. 
+      API restfull para o projeto Anamnese e retratando uma simulação de encaminhamento médico, utilizando .NET 6. 
       Este back-end é essencial para gerenciar dados e operações críticas do sistema. Incluindo migrations de banco de dados, criptografia de senha, entre outros...
       </SubTitle>
       <LinksContainer>

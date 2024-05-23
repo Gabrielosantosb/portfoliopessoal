@@ -23,6 +23,8 @@ import anamneseImage5 from "../../../assets/angularImages/anamnese/anamnese5.png
 import anamneseImage6 from "../../../assets/angularImages/anamnese/anamnese6.png"
 import anamneseImage7 from "../../../assets/angularImages/anamnese/anamnese7.png"
 import anamneseImage8 from "../../../assets/angularImages/anamnese/anamnese8.png"
+import anamneseImage9 from "../../../assets/angularImages/anamnese/anamnese9.png"
+import anamneseImage10 from "../../../assets/angularImages/anamnese/anamnese10.png"
 
 import paymentImage1 from "../../../assets/angularImages/payment_simulation/simulation1.png"
 import paymentImage2 from "../../../assets/angularImages/payment_simulation/simulation2.png"
@@ -104,6 +106,14 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese, paym
       original: anamneseImage7,
       thumbnail: anamneseImage7,
     },
+    {
+      original: anamneseImage9,
+      thumbnail: anamneseImage9,
+    },
+    {
+      original: anamneseImage10,
+      thumbnail: anamneseImage10,
+    },
   ];
 
   const stockImages = [
@@ -183,14 +193,14 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese, paym
   if (anamnese)
   return (
     <ProjectCard>
-      <Title>Projeto Anamnese</Title>
+      <Title>Projeto Anamnese/Encaminhamento médico</Title>
       <ReactImageGallery
         items={anamneseImages}
         showPlayButton={false}
         slideInterval={1000}
       ></ReactImageGallery>
       <SubTitle>
-      Projeto em Angular para aprimorar nosso sistema de ficha anamnese, onde integramos autenticação e preenchimento de formulários de forma eficiente. Uma das peças-chave desse projeto é a utilização da biblioteca PrimeNG.<br></br>
+      Projeto em Angular para aprimorar um sistema de ficha anamnese,sendo responsável também por encaminhamentos médicos definidos por especialidade, onde integramos autenticação e preenchimento de formulários de forma eficiente. Uma das peças-chave desse projeto é a utilização da biblioteca PrimeNG.<br></br>
       Ainda em constante desenvolvimento!
       </SubTitle>
       <LinksContainer>
