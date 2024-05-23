@@ -217,7 +217,7 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese, paym
   if(paymentSimulation)
   return (
     <ProjectCard>
-      <Title>Simualação de Pagamento</Title>
+      <Title>Simulação de Pagamento</Title>
       <ReactImageGallery
         items={paymentSimulationImages}
         showPlayButton={false}
