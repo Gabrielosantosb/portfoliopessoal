@@ -230,9 +230,9 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese, paym
         <TitleLink href="https://github.com/Gabrielosantosb/SimulacaoPagamento">
           Link para o repositório
         </TitleLink>
-        {/* <TitleLink href="https://insta-dogs-nine.vercel.app/home">
+        <TitleLink href="https://insta-dogs-nine.vercel.app/home">
           Link para o projeto
-        </TitleLink> */}
+        </TitleLink>
       </LinksContainer>
     </ProjectCard>
   );

@@ -134,15 +134,34 @@ export const Home = () => {
               </TitleIntrodution>
             </MyNameContainer>
             <DescriptionConteiner>
-              <Description>
-                - Bacharelado em <DescriptionRed>Ciências da Computação</DescriptionRed> - 5º semestre Universidade de Brasília (CEUB)<br></br>
-                - Curso <DescriptionRed>React</DescriptionRed> - Origamid<br></br> 
-                 - Formação Angular(v2+) - LoianeTrainig<br></br>
-                - Formação <DescriptionRed>Angular</DescriptionRed> 2024 - Udemy<br></br>
-                - Curso Web API <DescriptionRed>ASP .NET</DescriptionRed> Core Essencial (.NET 8) -Udemy<br></br>
-                - Arquitetura de Microsserviços com <DescriptionRed>ASP.NET</DescriptionRed>, .(NET 6)-Udemy<br></br>
-                - Desenvolvimento <DescriptionRed>WEB</DescriptionRed> - Udemy<br></br>
-              </Description>
+            <Description>
+              <ul>
+                <li>
+                  Bacharelado em <DescriptionRed>Ciências da Computação</DescriptionRed> - 5º semestre Universidade de Brasília (CEUB)
+                </li>
+                <li>
+                  Curso <DescriptionRed>React</DescriptionRed> - Origamid
+                </li>
+                <li>
+                  Formação Angular(v2+) - LoianeTrainig
+                </li>
+                <li>
+                  Formação <DescriptionRed>Angular</DescriptionRed> 2024 - Udemy
+                </li>
+                <li>
+                  Curso Web API <DescriptionRed>ASP .NET</DescriptionRed> Core Essencial (.NET 8) - Udemy
+                </li>
+                <li>
+                  Arquitetura de Microsserviços com <DescriptionRed>ASP.NET</DescriptionRed>, .NET 6 - Udemy
+                </li>
+                <li>
+                  Desenvolvimento .NET CORE: <DescriptionRed>Orientado para mercado de trabalho</DescriptionRed> - Udemy
+                </li>
+                <li>
+                  Desenvolvimento <DescriptionRed>WEB</DescriptionRed> - Udemy
+                </li>
+              </ul>
+            </Description>
             </DescriptionConteiner>
             <ButtonContainer>
             </ButtonContainer>
