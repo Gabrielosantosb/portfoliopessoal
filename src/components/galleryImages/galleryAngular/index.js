@@ -214,28 +214,28 @@ export const GalleryAngularImages = ({ stock, crud, todo, weather,anamnese, paym
     </ProjectCard>
   );
 
-  if(paymentSimulation)
-  return (
-    <ProjectCard>
-      <Title>Simulação de Pagamento</Title>
-      <ReactImageGallery
-        items={paymentSimulationImages}
-        showPlayButton={false}
-        slideInterval={1000}
-      ></ReactImageGallery>
-      <SubTitle>
-      Este projeto Angular destaca a criação de uma interface responsiva e atraente, priorizando HTML e CSS. Embora a lógica de programação seja secundária, o foco está na usabilidade e na estética, com atenção especial à adaptação a diferentes dispositivos e à acessibilidade para todos os usuários.
-      </SubTitle>
-      <LinksContainer>
-        <TitleLink href="https://github.com/Gabrielosantosb/SimulacaoPagamento">
-          Link para o repositório
-        </TitleLink>
-        <TitleLink href="https://insta-dogs-nine.vercel.app/home">
-          Link para o projeto
-        </TitleLink>
-      </LinksContainer>
-    </ProjectCard>
-  );
+  // if(paymentSimulation)
+  // return (
+  //   <ProjectCard>
+  //     <Title>Simulação de Pagamento</Title>
+  //     <ReactImageGallery
+  //       items={paymentSimulationImages}
+  //       showPlayButton={false}
+  //       slideInterval={1000}
+  //     ></ReactImageGallery>
+  //     <SubTitle>
+  //     Este projeto Angular destaca a criação de uma interface responsiva e atraente, priorizando HTML e CSS. Embora a lógica de programação seja secundária, o foco está na usabilidade e na estética, com atenção especial à adaptação a diferentes dispositivos e à acessibilidade para todos os usuários.
+  //     </SubTitle>
+  //     <LinksContainer>
+  //       <TitleLink href="https://github.com/Gabrielosantosb/SimulacaoPagamento">
+  //         Link para o repositório
+  //       </TitleLink>
+  //       <TitleLink href="https://insta-dogs-nine.vercel.app/home">
+  //         Link para o projeto
+  //       </TitleLink>
+  //     </LinksContainer>
+  //   </ProjectCard>
+  // );
 
   if (stock)
     return (
