@@ -172,7 +172,7 @@ export const Home = () => {
                             <Description>
                                 <ul>
                                     <li>
-                                        Bacharelado em <DescriptionRed>Ciências da Computação</DescriptionRed> - 5º
+                                        Bacharelado em <DescriptionRed>Ciências da Computação</DescriptionRed> - 6º
                                         semestre Universidade de Brasília (CEUB)
                                     </li>
                                     <li>
