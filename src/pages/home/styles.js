@@ -267,7 +267,8 @@ export const DescriptionExperience = styled.p`
 `;
 
 export const SkillsContainer = styled.div`
-  margin-right: 10%;
+    align-content: center;
+    margin-right: 10%;
 `;
 
 export const DivisorImage = styled.img`
